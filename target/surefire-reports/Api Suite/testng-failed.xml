@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Api Suite]">
+  <test thread-count="5" verbose="0" name="Api Tests(failed)">
+    <parameter name="PlatformName" value="api"/>
+    <classes>
+      <class name="sanity.StudentListsAPI">
+        <methods>
+          <include name="test04_deleteStudentAndVerify"/>
+          <include name="beforeMethod"/>
+          <include name="test03_updateStudentAndVerify"/>
+          <include name="afterMethod"/>
+          <include name="test01_verify_Student"/>
+          <include name="closeSession"/>
+          <include name="startSession"/>
+          <include name="test02_AddStudentAndVerify"/>
+        </methods>
+      </class> <!-- sanity.StudentListsAPI -->
+    </classes>
+  </test> <!-- Api Tests(failed) -->
+</suite> <!-- Failed suite [Api Suite] -->

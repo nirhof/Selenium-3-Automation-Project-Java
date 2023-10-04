@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="electron Suite" duration-ms="51859" started-at="2023-09-17T13:02:39 IDT" finished-at="2023-09-17T13:03:31 IDT">
+    <groups>
+    </groups>
+    <test name="electron Tests" duration-ms="51859" started-at="2023-09-17T13:02:39 IDT" finished-at="2023-09-17T13:03:31 IDT">
+      <class name="sanity.Todo">
+        <test-method status="PASS" signature="startSession(java.lang.String)[pri:0, instance:sanity.Todo@7cf7aee]" name="startSession" is-config="true" duration-ms="10042" started-at="2023-09-17T13:02:39 IDT" finished-at="2023-09-17T13:02:49 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[electron]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSession -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.Todo@7cf7aee]" name="beforeMethod" is-config="true" duration-ms="184" started-at="2023-09-17T13:02:49 IDT" finished-at="2023-09-17T13:02:50 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.Todo.test01_addAndVerifyNewTask()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test01_addAndVerifyNewTask()[pri:0, instance:sanity.Todo@7cf7aee]" name="test01_addAndVerifyNewTask" duration-ms="1681" started-at="2023-09-17T13:02:50 IDT" description="Test01 - add and verify task" finished-at="2023-09-17T13:02:52 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01_addAndVerifyNewTask -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.Todo@7cf7aee]" name="afterMethod" is-config="true" duration-ms="10214" started-at="2023-09-17T13:02:52 IDT" finished-at="2023-09-17T13:03:02 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.Todo@7cf7aee]" name="beforeMethod" is-config="true" duration-ms="29" started-at="2023-09-17T13:03:02 IDT" finished-at="2023-09-17T13:03:02 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.Todo.test02_deleteTask()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test02_deleteTask()[pri:0, instance:sanity.Todo@7cf7aee]" name="test02_deleteTask" duration-ms="10582" started-at="2023-09-17T13:03:02 IDT" description="Test02 - delete task" finished-at="2023-09-17T13:03:13 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02_deleteTask -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.Todo@7cf7aee]" name="afterMethod" is-config="true" duration-ms="10044" started-at="2023-09-17T13:03:13 IDT" finished-at="2023-09-17T13:03:23 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.Todo@7cf7aee]" name="beforeMethod" is-config="true" duration-ms="28" started-at="2023-09-17T13:03:23 IDT" finished-at="2023-09-17T13:03:23 IDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.Todo.test03_addAndVerifyTasks()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test03_addAndVerifyTasks()[pri:0, instance:sanity.Todo@7cf7aee]" name="test03_addAndVerifyTasks" duration-ms="1123" started-at="2023-09-17T13:03:23 IDT" description="Test03 - add tasks" finished-at="2023-09-17T13:03:24 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03_addAndVerifyTasks -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.Todo@7cf7aee]" name="afterMethod" is-config="true" duration-ms="230" started-at="2023-09-17T13:03:24 IDT" finished-at="2023-09-17T13:03:24 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="closeSession()[pri:0, instance:sanity.Todo@7cf7aee]" name="closeSession" is-config="true" duration-ms="6894" started-at="2023-09-17T13:03:24 IDT" finished-at="2023-09-17T13:03:31 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- sanity.Todo -->
+    </test> <!-- electron Tests -->
+  </suite> <!-- electron Suite -->
+</testng-results>
