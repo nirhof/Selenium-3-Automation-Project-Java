@@ -32,10 +32,14 @@ import java.lang.reflect.Method;
 
 public class CommonOps extends Base {
 
+    // Method Name: getData
+    // Method Description: This Method get the data from xml file
+    // Method Parameters: String of the node name of the xml whose content is to be retrieved
+    // Method Return: String of the content of the specified XML node
     public static String getData(String nodeName) {
         DocumentBuilder dBuilder;
         Document doc = null;
-        File fXmlFile = new File("./Configuration/DataConfig.xml");
+        File fXmlFile = new File("./Configuration/DataConfig.xml"); // Load XML file and set up DocumentBuilder
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         try {
             dBuilder = dbFactory.newDocumentBuilder();
@@ -47,34 +51,37 @@ public class CommonOps extends Base {
         return doc.getElementsByTagName(nodeName).item(0).getTextContent();
     }
 
+    // Method Name : initBrowser
+    // Method Description: Initializes a web browser based on the provided browser type.
+    // Method Parameters : String of browserType - The type of browser to be initialized (e.g., "chrome", "firefox").
+    // Throws : RuntimeException - If an invalid browser type is provided.
     public void initBrowser(String browserType) {
-        if (browserType.equalsIgnoreCase("chrome"))
+        // Check which browser type is provided
+        if (browserType.equalsIgnoreCase("chrome")) // Initialize Chrome WebDriver
             driver = initChromeDriver();
-        else if (browserType.equalsIgnoreCase("firefox"))
+        else if (browserType.equalsIgnoreCase("firefox")) // Initialize Firefox WebDriver
             driver = initFirefoxDriver();
-        else if (browserType.equalsIgnoreCase("edge"))
+        else if (browserType.equalsIgnoreCase("edge")) // Initialize Edge WebDriver
             driver = initEdgeDriver();
-        else if (browserType.equalsIgnoreCase("ie"))
+        else if (browserType.equalsIgnoreCase("ie")) // Initialize Internet Explorer WebDriver
             driver = initIEDriver();
         else
-            throw new RuntimeException("Invalid browser type");
+            throw new RuntimeException("Invalid browser type"); // Throw an exception for invalid browser types
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Long.parseLong(getData("Timeout")), TimeUnit.SECONDS);
         wait = new WebDriverWait(driver, Long.parseLong(getData("Timeout")));
         driver.get(getData("url"));
-        ManagePages.initSauceDemo();
-        actions = new Actions(driver);
-
+        ManagePages.initSauceDemo();   // Initialize components for managing pages
+        actions = new Actions(driver);  // Initialize Actions class for performing advanced user interactions
+        // Log in using provided username and password
         Webflows.login(getData("userName"), getData("password"));
     }
 
 
-    /**
-     * Initializes and returns a Chrome WebDriver.
-     *
-     * @return An instance of Chrome WebDriver.
-     */
+    // Method Name: initChromeDriver
+    // Method Description : Initializes and returns a Chrome WebDriver.
+    // Method Return: An instance of Chrome WebDriver.
     public static WebDriver initChromeDriver() {
 //        WebDriverManager.chromedriver().setup();
         System.setProperty("webdriver.chrome.driver", "C:\\Automation\\JavaCourse\\Projects\\FinalProject\\FinalProject (2)\\FinalProject\\FinalProject\\Drivers\\chromedriver.exe");
@@ -82,49 +89,42 @@ public class CommonOps extends Base {
         return driver;
     }
 
-    /**
-     * Initializes and returns a Firefox WebDriver.
-     *
-     * @return An instance of Firefox WebDriver.
-     */
+    // Method Name: initFirefoxDriver
+    // Method Description : Initializes and returns a Firefox WebDriver.
+    // Method Return: An instance of Firefox WebDriver.
     public static WebDriver initFirefoxDriver() {
         WebDriverManager.firefoxdriver().setup();
         WebDriver driver = new FirefoxDriver();
         return driver;
     }
 
-    /**
-     * Initializes and returns an Internet Explorer WebDriver.
-     *
-     * @return An instance of Internet Explorer WebDriver.
-     */
+    // Method Name: initIEDriver
+    // Method Description: Initializes and returns an Internet Explorer WebDriver.
+    // Method Return: An instance of Internet Explorer WebDriver.
     public static WebDriver initIEDriver() {
         WebDriverManager.iedriver().setup();
         WebDriver driver = new InternetExplorerDriver();
         return driver;
     }
 
-    /**
-     * Initializes and returns an Edge WebDriver.
-     *
-     * @return An instance of Edge WebDriver.
-     */
+    // Method Name: initEdgeDriver
+    // Method Description : Initializes and returns an Edge WebDriver.
+    // Method Return: An instance of Edge WebDriver.
     public static WebDriver initEdgeDriver() {
         WebDriverManager.edgedriver().setup();
         WebDriver driver = new EdgeDriver();
         return driver;
     }
 
-    /**
-     * Initializes the mobile testing environment and sets up the driver.
-     */
+    // Method Name: initMobile
+    // Method Description: Initializes the mobile testing environment and sets up the driver.
     public static void initMobile() {
         dc.setCapability(MobileCapabilityType.UDID, getData("UDID"));
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, getData("AppPackage"));
         dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, getData("AppActivity"));
-        try {
+        try { // Connect to the Appium server
             mobileDriver = new AndroidDriver(new URL(getData("AppiumServer")), dc);
-        } catch (Exception e) {
+        } catch (Exception e) {    // Handle connection exception
             throw new RuntimeException("Can not connect to appium server, see details: " + e);
         }
         ManagePages.initEribank();
@@ -135,23 +135,20 @@ public class CommonOps extends Base {
         MobileFlows.Login(getData("EribankUserName"), getData("EribankPassword"));
     }
 
-    /**
-     * Initializes the API testing environment and sets up the HTTP request.
-     */
+    // Method Name: initApi
+    // Method Description: Initializes the API testing environment and sets up the HTTP request.
     public static void initAPI() {
         // Set the base URI for the API
         RestAssured.baseURI = getData("url_base_API");
-        httpRequest = RestAssured.given();
+        httpRequest = RestAssured.given(); // Initialize the HTTP request
 
     }
 
-    /**
-     * Initializes the Electron application testing environment and sets up the ChromeDriver.
-     */
+    // Method Name : initElectronAppTesting
+    // Method Description : Initializes the Electron application testing environment and sets up the ChromeDriver.
     public static void initElectron() {
 
         System.setProperty("webdriver.chrome.driver", getData("ElectronDriverPath"));
-
         ChromeOptions opt = new ChromeOptions();
         opt.setBinary(getData("ElectronAppPath"));
         dc.setCapability("chromeOptions", opt);
@@ -163,6 +160,8 @@ public class CommonOps extends Base {
         actions = new Actions(driver);
     }
 
+    // Method Name : initDesktop
+    // Method Description : Initializes the desktop application testing environment and sets up the WindowsDriver.
     public static void initDesktop() {
         dc.setCapability("app", getData("CalculatorApp"));
         try {
@@ -176,6 +175,9 @@ public class CommonOps extends Base {
     }
 
 
+    // Method Name : startSession
+    // Method Description : Starts a session based on the provided PlatformName from xml file.
+    // Method Parameters : String PlatformName - The name of the platform ("web", "mobile", "api", "electron", "desktop").
     @BeforeClass
     @Parameters({"PlatformName"})
     public void startSession(String PlatformName) {
@@ -194,9 +196,11 @@ public class CommonOps extends Base {
             throw new RuntimeException("Invalid platform name");
         softAssert = new SoftAssert();
         screen = new Screen();
-        ManageDB.openConnection(getData("DBURL"),getData("DBUserName"),getData("DBPassword"));
+        ManageDB.openConnection(getData("DBURL"), getData("DBUserName"), getData("DBPassword"));
     }
 
+    // Method Name : closeSession
+    // Method Description: Closes the session.
     @AfterClass
     public void closeSession() {
         if (!platform.equalsIgnoreCase("api")) {
@@ -209,6 +213,9 @@ public class CommonOps extends Base {
         }
     }
 
+    // Method Name : beforeMethod
+    // Method Description: Executes before each test MonteScreenRecorder.startRecord (if platform is not api)
+    // Method Parameters : Method - The test being executed.
     @BeforeMethod
     public void beforeMethod(Method method) {
         if (!platform.equalsIgnoreCase("api"))
@@ -219,15 +226,18 @@ public class CommonOps extends Base {
             }
     }
 
+    // Method Name : afterMethod
+    // Method Description: Executes after each test If the platform is Electron,
+    // it performs a specific action to empty a list.
     @AfterMethod
-    public void afterMethod(){
+    public void afterMethod() {
         if (platform.equalsIgnoreCase("electron"))
-            ElectronFlows.emptyList();;
+            ElectronFlows.emptyList();
+        ;
     }
 
-    /**
-     * Navigates the webdriver to the login page by opening the specified URL.
-     */
+    // Method Name : goLoginPage
+    // Method Description: Navigates the webdriver to the login page by opening the specified URL.
     public void goLoginPage() {
         driver.get(getData("url"));
     }

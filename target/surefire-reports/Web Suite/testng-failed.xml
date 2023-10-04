@@ -10,6 +10,7 @@
           <include name="beforeMethod"/>
           <include name="closeSession"/>
           <include name="startSession"/>
+          <include name="test09_verifyTotalPriceDB"/>
           <include name="test8_verifyCartIcon"/>
         </methods>
       </class> <!-- sanity.SauceDemoWeb -->

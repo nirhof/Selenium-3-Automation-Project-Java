@@ -4,11 +4,9 @@ import com.google.common.util.concurrent.Uninterruptibles;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
@@ -34,11 +32,18 @@ public class Listeners extends CommonOps implements ITestListener {
                 ("------------ Skipping Test: " + test.getName() + " ------------");
     }
 
+    // Method Name : onTestStart
+    // Method Description: This method is executed when a test starts.
+    // Method Parameters : ITestResult test - Information about the test that is starting.
+    // Print a message indicating the start of the test
     public void onTestStart(ITestResult test) {
         System.out.println
                 ("------------ Starting Test: " + test.getName() + " ------------");
     }
 
+    // Method Name : onTestSuccess
+    // Method Description: This method is executed when a test method passes. if platform is not api it delete the video file of the run
+    // Method Parameters : ITestResult test - Information about the passed test.
     public void onTestSuccess(ITestResult test) {
         if (!platform.equalsIgnoreCase("api")){
             System.out.println
@@ -61,6 +66,10 @@ public class Listeners extends CommonOps implements ITestListener {
         }
     }
 
+    // Method Name : onTestFailure
+    // Method Description: This method is executed when a test method fails.
+    // taking a screenshot and stop video record if platform is not api
+    // Method Parameters : ITestResult test - Information about the failed test.
     public void onTestFailure(ITestResult test) {
         if (!platform.equalsIgnoreCase("api")){
             Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);

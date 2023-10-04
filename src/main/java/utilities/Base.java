@@ -14,7 +14,6 @@ import org.testng.asserts.SoftAssert;
 import pageObjects.Eribank.LoginPage;
 import pageObjects.saucedemo.*;
 import pageObjects.Eribank.*;
-
 import java.sql.Connection;
 import java.sql.Statement;
 import java.sql.ResultSet;

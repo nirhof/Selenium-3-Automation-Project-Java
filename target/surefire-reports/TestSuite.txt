@@ -1,4 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 55.352 s - in TestSuite
+Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 161.938 s <<< FAILURE! - in TestSuite
+test09_verifyTotalPriceDB(sanity.SauceDemoWeb)  Time elapsed: 3.239 s  <<< FAILURE!
+java.lang.NullPointerException
+	at sanity.SauceDemoWeb.test09_verifyTotalPriceDB(SauceDemoWeb.java:98)
+
+test8_verifyCartIcon(sanity.SauceDemoWeb)  Time elapsed: 17.292 s  <<< FAILURE!
+java.lang.AssertionError: 
+Error Comparing Image File: FindFailed: C:\\Automation\\Projects\\FinalProject\\ImageRepository\\SauceDemoCart.png: (59x67) in R[0,0 1280x1024]@S(0)
+  Line 2287, in file Region.java
+
+	at sanity.SauceDemoWeb.test8_verifyCartIcon(SauceDemoWeb.java:90)
+

@@ -11,9 +11,11 @@ C:\Automation\Projects\FinalProject\src\main\java\pageObjects\todo\MainPage.java
 C:\Automation\Projects\FinalProject\src\main\java\pageObjects\Calculator\MainPage.java
 C:\Automation\Projects\FinalProject\src\main\java\pageObjects\saucedemo\footerSocial.java
 C:\Automation\Projects\FinalProject\src\main\java\utilities\Base.java
+C:\Automation\Projects\FinalProject\src\main\java\extensions\DBActions.java
 C:\Automation\Projects\FinalProject\src\main\java\utilities\Listeners.java
 C:\Automation\Projects\FinalProject\src\main\java\pageObjects\saucedemo\YourCartPage.java
 C:\Automation\Projects\FinalProject\src\main\java\pageObjects\saucedemo\LoginPage.java
+C:\Automation\Projects\FinalProject\src\main\java\utilities\ManageDB.java
 C:\Automation\Projects\FinalProject\src\main\java\extensions\Verifications.java
 C:\Automation\Projects\FinalProject\src\main\java\workflows\DesktopFlows.java
 C:\Automation\Projects\FinalProject\src\main\java\extensions\MobileActions.java

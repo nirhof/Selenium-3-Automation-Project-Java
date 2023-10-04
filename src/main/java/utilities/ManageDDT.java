@@ -1,7 +1,6 @@
 package utilities;
 
 import org.testng.annotations.DataProvider;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -11,11 +10,9 @@ import java.util.List;
 
 public class ManageDDT extends CommonOps {
 
-    /**
-     * DataProvider method that retrieves test data from a CSV file.
-     *
-     * @return A 2D array containing test data.
-     */
+    // Method Name : getDataObject
+    // Method Description: DataProvider method that retrieves test data from a CSV file.
+    // Returns a 2D array containing test data.
     @DataProvider(name = "data-provider")
     public Object[][] getDataObject() {
 
@@ -24,11 +21,10 @@ public class ManageDDT extends CommonOps {
     }
 
 
-    /**
-     * Reads the contents of a CSV file and returns them as a list of strings.
-     * get String of The path to the CSV file.
-     * return A list of strings containing the lines from the CSV file.
-     */
+    // Method Name : readCSV
+    // Method Description: Reads the contents of a CSV file and returns them as a list of strings.
+    // Method Parameters : String csvFile - The path to the CSV file.
+    // Returns : A list of strings containing the lines from the CSV file.
     public static List<String> readCSV(String csvFile) {
         List<String> lines = null; // Initialize a list of strings to store the lines from the CSV file
         File file = new File(csvFile); // Create a File object representing the CSV file
@@ -43,11 +39,10 @@ public class ManageDDT extends CommonOps {
         return lines; // Return the list of strings (lines from the CSV file)
     }
 
-    /**
-     * Reads data from a CSV file and formats it into a 2D array.
-     * get a string of filePath The path to the CSV file.
-     * return A 2D array containing the formatted data.
-     */
+    // Method Name : getDataFromCSV
+    // Method Description: Reads data from a CSV file and formats it into a 2D array.
+    // Method Parameters : String filePath - The path to the CSV file.
+    // Returns : A 2D array containing the formatted data.
     public static Object[][] getDataFromCSV(String filePath) {
         // Initialize a 2D array to hold the data (assuming a fixed size of 3x3)
         Object[][] data = new Object[3][3];

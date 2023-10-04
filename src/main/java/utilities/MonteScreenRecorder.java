@@ -20,6 +20,18 @@ public class MonteScreenRecorder extends ScreenRecorder
 {
     public static ScreenRecorder screenRecorder;
     public String name;
+
+    // Constructor Name : MonteScreenRecorder
+    // Constructor Description: Initializes a MonteScreenRecorder with the provided configurations.
+    // Constructor Parameters :
+    //   - cfg           : The graphics configuration.
+    //   - captureArea   : The area to capture.
+    //   - fileFormat    : The format for the recorded file.
+    //   - screenFormat  : The format for the screen.
+    //   - mouseFormat   : The format for the mouse cursor.
+    //   - audioFormat   : The format for audio.
+    //   - movieFolder   : The folder where the movie will be saved.
+    //   - name          : The name of the recorder.
     public MonteScreenRecorder(GraphicsConfiguration cfg, Rectangle captureArea, Format fileFormat,
                                Format screenFormat, Format mouseFormat, Format audioFormat, File movieFolder, String name)
             throws IOException, AWTException {
@@ -27,7 +39,10 @@ public class MonteScreenRecorder extends ScreenRecorder
         this.name = name;
     }
 
-    @Override
+    // Method Name : createMovieFile
+    // Method Description: Creates a movie file with the specified format.
+    // Method Parameters : Format fileFormat - The format for the recorded file.
+      @Override
     protected File createMovieFile(Format fileFormat) throws IOException {
         if (!movieFolder.exists()) {
             movieFolder.mkdirs();
@@ -40,6 +55,9 @@ public class MonteScreenRecorder extends ScreenRecorder
                 name + "." + Registry.getInstance().getExtension(fileFormat));
     }
 
+    // Method Name : startRecord
+    // Method Description: Starts recording the screen.
+    // Method Parameters : String methodName - The name of the test being recorded.
     public static void startRecord(String methodName) throws Exception {
         File file = new File("./test-recordings/");
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -59,7 +77,9 @@ public class MonteScreenRecorder extends ScreenRecorder
         screenRecorder.start();
     }
 
-    public static void stopRecord() throws Exception {
+    // Method Name : stopRecord
+    // Method Description: Stops the recording process of the video.
+        public static void stopRecord() throws Exception {
         screenRecorder.stop();
         System.out.println("Recorded Screen Cast File Stop Recording");
     }
