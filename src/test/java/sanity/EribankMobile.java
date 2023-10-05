@@ -2,7 +2,6 @@ package sanity;
 
 import extensions.MobileActions;
 import extensions.Verifications;
-import io.appium.java_client.android.AndroidElement;
 import io.qameta.allure.Description;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;

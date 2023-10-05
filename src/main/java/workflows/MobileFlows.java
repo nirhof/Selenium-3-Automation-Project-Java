@@ -3,8 +3,6 @@ package workflows;
 
 import extensions.MobileActions;
 import io.qameta.allure.Step;
-
-import pageObjects.saucedemo.LoginPage;
 import utilities.CommonOps;
 
 
