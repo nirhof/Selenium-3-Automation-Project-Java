@@ -6,52 +6,123 @@ import org.openqa.selenium.support.FindBy;
 public class MainPage {
 
     @FindBy(name = "אפס")
-    public WebElement btn_0;
+    private WebElement digit_0;
     @FindBy(name = "אחת")
-    public WebElement btn_1;
+    private WebElement digit_1;
 
     @FindBy(name = "שתיים")
-    public WebElement btn_2;
+    private WebElement digit_2;
 
     @FindBy(name = "שלוש")
-    public WebElement btn_3;
+    private WebElement digit_3;
 
     @FindBy(name = "ארבע")
-    public WebElement btn_4;
+    private WebElement digit_4;
 
     @FindBy(name = "חמש")
-    public WebElement btn_5;
+    private WebElement digit_5;
 
     @FindBy(name = "שש")
-    public WebElement btn_6;
+    private WebElement digit_6;
 
     @FindBy(name = "שבע")
-    public WebElement btn_7;
+    private WebElement digit_7;
 
     @FindBy(name = "שמונה")
-    public WebElement btn_8;
+    private WebElement digit_8;
 
     @FindBy(name = "תשע")
-    public WebElement btn_9;
+    private WebElement digit_9;
 
     @FindBy(name = "ועוד")
-    public WebElement btn_plus;
+    private WebElement btn_plus;
 
     @FindBy(name = "פחות")
-    public WebElement btn_minus;
+    private WebElement btn_minus;
 
     @FindBy(name = "הכפל ב")
-    public WebElement btn_multiply;
+    private WebElement btn_multiply;
 
     @FindBy(name = "חלק ב")
-    public WebElement btn_divide;
+    private WebElement btn_divide;
 
     @FindBy(name = "שווה")
-    public WebElement btn_equals;
+    private WebElement btn_equals;
 
     @FindBy(name = "נקה")
-    public WebElement btn_clear;
+    private WebElement btn_clear;
 
     @FindBy(xpath = "//*[@AutomationId='CalculatorResults']")
-    public WebElement field_result;
+    private WebElement field_result;
+
+    // get methods
+    public WebElement getDigit_0(){
+        return digit_0;
+    }
+
+    public WebElement getDigit_1(){
+        return digit_1;
+    }
+
+    public WebElement getDigit_2(){
+        return digit_2;
+    }
+
+    public WebElement getDigit_3(){
+        return digit_3;
+    }
+
+    public WebElement getDigit_4(){
+        return digit_4;
+    }
+
+    public WebElement getDigit_5(){
+        return digit_5;
+    }
+
+    public WebElement getDigit_6(){
+        return digit_6;
+    }
+
+    public WebElement getDigit_7(){
+        return digit_7;
+    }
+
+    public WebElement getDigit_8(){
+        return digit_8;
+    }
+
+    public WebElement getDigit_9(){
+        return digit_9;
+    }
+
+    public WebElement getPlusButton(){
+        return btn_plus;
+    }
+
+    public WebElement getMinusButton(){
+        return btn_minus;
+    }
+
+    public WebElement getMultiplyButton(){
+        return btn_multiply;
+    }
+
+    public WebElement getDivideButton(){
+        return btn_divide;
+    }
+
+    public WebElement getEqualsButton(){
+        return btn_equals;
+    }
+
+    public WebElement getClearButton(){
+        return btn_clear;
+    }
+
+    public WebElement getResultField(){
+        return field_result;
+    }
+
+
 }

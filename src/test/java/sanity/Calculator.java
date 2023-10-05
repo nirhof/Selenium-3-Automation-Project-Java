@@ -14,24 +14,24 @@ public class Calculator extends CommonOps {
     @Test(description = "Test01 - Verify addition")
     @Description("This test verify number 1 + number 3")
     public void test01_verifyAddTwoNumbers() {
-        DesktopFlows.addition(calcMainPage.btn_1, calcMainPage.btn_3);
-        WebElement Actual = calcMainPage.field_result;
+        DesktopFlows.addition(calcMainPage.getDigit_1(), calcMainPage.getDigit_3());
+        WebElement Actual = calcMainPage.getResultField();
         Verifications.verifyTextInElement(Actual,"התצוגה היא 4");
     }
 
     @Test(description = "Test02 - Verify Multiply")
     @Description("This test verify number 1 X number 3")
     public void test02_verifyMultiplyTwoNumbers() {
-        DesktopFlows.multiply(calcMainPage.btn_1, calcMainPage.btn_3);
-        WebElement Actual = calcMainPage.field_result;
+        DesktopFlows.multiply(calcMainPage.getDigit_1(), calcMainPage.getDigit_3());
+        WebElement Actual = calcMainPage.getResultField();
         Verifications.verifyTextInElement(Actual,"התצוגה היא 3");
     }
 
     @Test(description = "Test03 - Verify division by 0")
     @Description("This test verify division by 0")
     public void test03_verifyDivisionByZero() {
-        DesktopFlows.division(calcMainPage.btn_6, calcMainPage.btn_0);
-        WebElement Actual = calcMainPage.field_result;
+        DesktopFlows.division(calcMainPage.getDigit_6(), calcMainPage.getDigit_0());
+        WebElement Actual = calcMainPage.getResultField();
         Verifications.verifyTextInElement(Actual,"התצוגה היא לא ניתן לחלק באפס");
     }
 }

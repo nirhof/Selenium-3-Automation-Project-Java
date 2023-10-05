@@ -18,12 +18,25 @@ public class LoginPage {
     }
 
     @AndroidFindBy(id = "usernameTextField")
-    public AndroidElement txt_username;
+    private AndroidElement txt_username;
 
     @AndroidFindBy(id = "passwordTextField")
-    public AndroidElement txt_password;
+    private AndroidElement txt_password;
 
     @AndroidFindBy(id = "loginButton")
-    public AndroidElement btn_login;
+    private AndroidElement btn_login;
+
+    // get elements
+    public AndroidElement getUsernameTextField() {
+        return txt_username;
+    }
+
+    public AndroidElement getPasswordTextField() {
+        return txt_password;
+    }
+
+    public AndroidElement getLoginButton() {
+        return btn_login;
+    }
 
 }

@@ -17,9 +17,9 @@ public class EribankMobile extends CommonOps {
     @Description("This test verify payment process in Eribank App. After successful payment the user Balance will go down")
     public void test01_Payment() {
 
-        MobileActions.tap(eribankMainPage.btn_Make_Payment);
+        MobileActions.tap(eribankMainPage.getMakePaymentButton());
         MobileFlows.Pay("0546900249", "nir hofenberg", "20", "Iceland");
-        Verifications.verifyTextInElement(eribankMainPage.txt_YourBalance, "Your balance is: 80.00$");
+        Verifications.verifyTextInElement(eribankMainPage.getYourBalanceText(), "Your balance is: 80.00$");
 
     }
 }

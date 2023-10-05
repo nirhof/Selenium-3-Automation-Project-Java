@@ -19,31 +19,62 @@ public class PaymentPage {
     }
 
     @AndroidFindBy(id = "phoneTextField")
-    public AndroidElement txt_phone;
+    private AndroidElement txt_phone;
 
     @AndroidFindBy(id = "nameTextField")
-    public AndroidElement txt_name;
+    private AndroidElement txt_name;
 
     @AndroidFindBy(id = "amountTextField")
-    public AndroidElement txt_amount;
+    private AndroidElement txt_amount;
 
     @AndroidFindBy(id = "countryTextField")
-    public AndroidElement txt_countrey;
+    private AndroidElement txt_countrey;
 
     @AndroidFindBy(id = "countryButton")
-    public AndroidElement btn_selectCountry;
+    private AndroidElement btn_selectCountry;
 
     @AndroidFindBy(id = "sendPaymentButton")
-    public AndroidElement btn_SendPayment;
-
+    private AndroidElement btn_SendPayment;
 
     @AndroidFindBy(id = "cancelButton")
-    public AndroidElement btn_cancel;
+    private AndroidElement btn_cancel;
 
     @AndroidFindBy(id = "button1")
-    public AndroidElement btn_Yes;
+    private AndroidElement btn_Yes;
 
+// get elements
 
+    public AndroidElement getPhoneTextField() {
+        return txt_phone;
+    }
+
+    public AndroidElement getNameTextField() {
+        return txt_name;
+    }
+
+    public AndroidElement getAmountTextField() {
+        return txt_amount;
+    }
+
+    public AndroidElement getCountryTextField() {
+        return txt_countrey;
+    }
+
+    public AndroidElement getSelectCountryButton() {
+        return btn_selectCountry;
+    }
+
+    public AndroidElement getSendPaymentButton() {
+        return btn_SendPayment;
+    }
+
+    public AndroidElement getCancelButton() {
+        return btn_cancel;
+    }
+
+    public AndroidElement getYesButton() {
+        return btn_Yes;
+    }
 
 
 

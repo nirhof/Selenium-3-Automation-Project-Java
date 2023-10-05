@@ -11,7 +11,7 @@
     <url>https://www.saucedemo.com/</url>
 
     <!-- Mobile -->
-    <UDID>5200b53e4c5d5579</UDID>
+    <UDID>R58W703T0NY</UDID>
     <AppPackage>com.experitest.ExperiBank</AppPackage>
     <AppActivity>.LoginActivity</AppActivity>
     <AppiumServer>http://localhost:4723/wd/hub</AppiumServer>

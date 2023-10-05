@@ -20,20 +20,41 @@ public class MainPage {
     }
 
     @AndroidFindBy(id = "makePaymentButton")
-    public AndroidElement btn_Make_Payment;
+    private AndroidElement btn_Make_Payment;
 
     @AndroidFindBy(id = "mortageRequestButton")
-    public AndroidElement btn_Mortgage_Request;
+    private AndroidElement btn_Mortgage_Request;
 
     @AndroidFindBy(id = "expenseReportButton")
-    public AndroidElement btn_Expense_Report;
+    private AndroidElement btn_Expense_Report;
 
     @AndroidFindBy(id = "logoutButton")
-    public AndroidElement btn_Logout;
+    private AndroidElement btn_Logout;
 
     @AndroidFindBy(xpath = "//*[starts-with(@text, 'Your balance is:')]")
-    public AndroidElement txt_YourBalance;
+    private AndroidElement txt_YourBalance;
 
 
+// get elements
+
+    public AndroidElement getMakePaymentButton() {
+        return btn_Make_Payment;
+    }
+
+    public AndroidElement getMortgageRequestButton() {
+        return btn_Mortgage_Request;
+    }
+
+    public AndroidElement getExpenseReportButton() {
+        return btn_Expense_Report;
+    }
+
+    public AndroidElement getLogoutButton() {
+        return btn_Logout;
+    }
+
+    public AndroidElement getYourBalanceText() {
+        return txt_YourBalance;
+    }
 
 }

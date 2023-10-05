@@ -23,7 +23,6 @@ import java.sql.ResultSet;
 public class Base {
 
     // General
-
     protected static WebDriverWait wait;
     protected static Actions actions;
     protected static SoftAssert softAssert;
@@ -31,16 +30,13 @@ public class Base {
     protected static String platform;
 
     // Web
-
     protected static WebDriver driver;
 
     // Mobile
     protected static AppiumDriver mobileDriver;
     protected  static DesiredCapabilities dc = new DesiredCapabilities();
 
-
     // Page Objects - Web
-
     protected static pageObjects.saucedemo.LoginPage saucedemoLogin;
     protected static BurgerMenu saucedemoBurgerMenu;
     protected static Products saucedemoProducts;
@@ -60,7 +56,6 @@ public class Base {
     protected static Statement stmt;
     protected static ResultSet rs;
 
-
     // Page Objects - Mobile
     protected static LoginPage eribankLogin;
     protected static MainPage eribankMainPage;
@@ -70,7 +65,6 @@ public class Base {
     protected static pageObjects.todo.MainPage todoMainPage;
 
     // Page Objects Electron
-
     protected static pageObjects.Calculator.MainPage calcMainPage;
 
 

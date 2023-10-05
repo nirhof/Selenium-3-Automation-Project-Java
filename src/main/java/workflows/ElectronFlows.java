@@ -9,26 +9,26 @@ public class ElectronFlows extends CommonOps {
 
     @Step("Add new task to the list")
     public static void addNewTask(String taskName) {
-        UIActions.updateText(todoMainPage.txt_CreateTask, taskName);
-        UIActions.PressKey(todoMainPage.txt_CreateTask, Keys.RETURN);
+        UIActions.updateText(todoMainPage.getCreateTaskTextField(), taskName);
+        UIActions.PressKey(todoMainPage.getCreateTaskTextField(), Keys.RETURN);
 
     }
 
     @Step("Count and return number of tasks")
     public static int getNumberofTasks() {
-        return todoMainPage.list_tasks.size();
+        return todoMainPage.getTaskList().size();
     }
 
     @Step("Empty lists from tasks")
     public static void emptyList() {
         for (int i = 0; i < getNumberofTasks(); i++) {
-            UIActions.mouseHover(todoMainPage.btn_X);
+            UIActions.mouseHover(todoMainPage.getXButton());
         }
     }
 
     @Step("delete a task")
     public static void deleteTask() {
-        UIActions.click(todoMainPage.btn_X);
+        UIActions.click(todoMainPage.getXButton());
     }
 
 }
