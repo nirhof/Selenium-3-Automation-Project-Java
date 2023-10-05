@@ -8,22 +8,48 @@ import java.util.List;
 public class Products {
 
     @FindBy(className = "inventory_item")
-    public List <WebElement> inventory_Products;
+    private List <WebElement> inventory_Products;
 
     @FindBy(id = "react-burger-menu-btn")
-    public WebElement btn_Burger;
+    private WebElement btn_Burger;
 
     @FindBy(className = "product_sort_container")
-    public WebElement btn_sort_products;
+    private WebElement btn_sort_products;
 
     @FindBy(className = "inventory_item_price")
-    public WebElement products_price;
+    private WebElement products_price;
 
     @FindBy(id = "shopping_cart_container")
-    public WebElement btn_Cart;
+    private WebElement btn_Cart;
 
     @FindBy(css = "button[class='btn btn_primary btn_small btn_inventory']")
-    public List <WebElement> btn_add_to_cart;
+    private List <WebElement> btn_add_to_cart;
+
+    // get elements
+
+    public List<WebElement> getInventoryProducts() {
+        return inventory_Products;
+    }
+
+    public WebElement getBurgerButton() {
+        return btn_Burger;
+    }
+
+    public WebElement getSortProductsButton() {
+        return btn_sort_products;
+    }
+
+    public WebElement getProductsPrice() {
+        return products_price;
+    }
+
+    public WebElement getCartButton() {
+        return btn_Cart;
+    }
+
+    public List<WebElement> getAddToCartButtons() {
+        return btn_add_to_cart;
+    }
 
 
 

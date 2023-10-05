@@ -6,15 +6,27 @@ import org.openqa.selenium.support.FindBy;
 public class footerSocial {
 
     @FindBy(linkText = "Twitter")
-    public WebElement social_twitter;
+    private WebElement social_twitter;
 
     @FindBy(linkText = "Facebook")
-    public WebElement social_facebook;
+    private WebElement social_facebook;
 
     @FindBy(linkText = "LinkedIn")
-    public WebElement social_linkedin;
+    private WebElement social_linkedin;
 
+    // get elements
 
+    public WebElement getTwitterLink() {
+        return social_twitter;
+    }
+
+    public WebElement getFacebookLink() {
+        return social_facebook;
+    }
+
+    public WebElement getLinkedInLink() {
+        return social_linkedin;
+    }
 
 
 

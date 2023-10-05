@@ -15,7 +15,7 @@ public class SauceDemoWebTestLogin extends CommonOps {
     public void test9_verifyLogInErrors(String user, String password, String expected) {
         driver.get("https://www.saucedemo.com/");
         Webflows.login(user, password);
-        Verifications.verifyTextInElement(saucedemoLogin.txt_error_messege, expected);
+        Verifications.verifyTextInElement(saucedemoLogin.getErrorMessageText(), expected);
 
     }
 }

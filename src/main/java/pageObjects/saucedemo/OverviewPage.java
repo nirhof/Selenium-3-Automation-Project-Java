@@ -6,13 +6,27 @@ import org.openqa.selenium.support.FindBy;
 public class OverviewPage {
 
    @FindBy(css = "div[Class='summary_info_label summary_total_label']")
-    public WebElement field_total;
+    private WebElement field_total;
 
     @FindBy(id = "cancel")
-    public WebElement btn_cancel;
+    private WebElement btn_cancel;
 
     @FindBy(id = "finish")
-    public WebElement btn_finish;
+    private WebElement btn_finish;
+
+    // get elements
+
+ public WebElement getFieldTotal() {
+  return field_total;
+ }
+
+ public WebElement getCancelButton() {
+  return btn_cancel;
+ }
+
+ public WebElement getFinishButton() {
+  return btn_finish;
+ }
 
 
 
