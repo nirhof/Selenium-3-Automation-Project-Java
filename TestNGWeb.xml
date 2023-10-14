@@ -6,7 +6,7 @@
         <classes>
 <!--            <class name="sanity.SauceDemoWeb">-->
 <!--                <methods>-->
-<!--                    <include name="test09_verifyTotalPriceDB"></include>-->
+<!--                    <include name=""></include>-->
 <!--                </methods>-->
 <!--            </class>-->
             <class name="sanity.SauceDemoWeb"/>

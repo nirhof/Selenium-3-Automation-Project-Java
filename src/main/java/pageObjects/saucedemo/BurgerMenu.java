@@ -20,6 +20,7 @@ public class BurgerMenu {
     @FindBy(id = "react-burger-cross-btn")
     private WebElement btn_X;
 
+
     // get elements
 
     public WebElement getAllItemsButton() {

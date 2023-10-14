@@ -25,6 +25,22 @@ public class UIActions extends CommonOps {
         element.sendKeys(text);
     }
 
+    @Step("get value of Element")
+    public static String getValue(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+        String value = element.getAttribute("value");
+        return value;
+
+    }
+
+    @Step("get text of Element")
+    public static String getText(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+        String text = element.getText();
+        return text;
+    }
+
+
     @Step("Insert key")
     public static void PressKey(WebElement element, Keys keyvalue) {
         wait.until(ExpectedConditions.visibilityOf(element));

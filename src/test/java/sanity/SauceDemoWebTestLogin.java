@@ -18,4 +18,5 @@ public class SauceDemoWebTestLogin extends CommonOps {
         Verifications.verifyTextInElement(saucedemoLogin.getErrorMessageText(), expected);
 
     }
+
 }

@@ -5,6 +5,7 @@ import extensions.UIActions;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import utilities.CommonOps;
+
 import java.util.List;
 
 public class Webflows extends CommonOps {
@@ -64,13 +65,13 @@ public class Webflows extends CommonOps {
 
     @Step("business flow - Remove all Items from cart")
     public static void RemoveAllItem(List<WebElement> elements) {
-        for (WebElement element: elements) {
+        for (WebElement element : elements) {
             UIActions.click(saucedemoCartPage.getRemoveButton());
         }
     }
 
     @Step("business flow - add product to cart")
-    public static void AddItemToCart(List <WebElement> elements, int element_index ) {
+    public static void AddItemToCart(List<WebElement> elements, int element_index) {
         WebElement elem = elements.get(element_index);
         UIActions.click(elem);
     }
@@ -78,7 +79,7 @@ public class Webflows extends CommonOps {
     @Step("business flow - proceed checkout with customer details from DB")
     public static void CheckoutWithCustomerFromDB() {
         String query = "SELECT firstName, lastName, zipcode FROM Customers WHERE id = '2'";
-        List <String> customer = DBActions.getCustomers(query);
+        List<String> customer = DBActions.getCustomers(query);
 
         UIActions.click(saucedemoProducts.getCartButton());
         UIActions.click(saucedemoCartPage.getCheckoutButton());
