@@ -6,7 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.sikuli.script.FindFailed;
 import utilities.CommonOps;
+
 import java.util.List;
+
 import static org.testng.Assert.*;
 
 public class Verifications extends CommonOps {
@@ -72,10 +74,39 @@ public class Verifications extends CommonOps {
 
     @Step("Verify request response status code equals to text")
     public static void verifyStatusCode(int exptected) {
-        assertEquals(response.getStatusCode(),exptected);
+        assertEquals(response.getStatusCode(), exptected);
     }
 
+    @Step("Verify list of element equals to list of string text")
+    public static boolean compareElementText(List<WebElement> elements, List<String> expectedStrings) {
+        if (elements.size() != expectedStrings.size()) {
+            System.out.println("The lists sizes are different, they can't be equal");
+            return false; // If the sizes are different, they can't be equal
+
+        }
+
+        for (int i = 0; i < elements.size(); i++) {
+            WebElement element = elements.get(i);
+            String actualText = element.getText();
+
+            // If the text is empty, try to get the value attribute
+            if (actualText.isEmpty()) {
+                actualText = element.getAttribute("value");
+            }
+
+            String expectedText = expectedStrings.get(i);
+            System.out.println("element is : " + element);
+            System.out.println("exptected text is : " + actualText);
+
+            if (!actualText.equals(expectedText)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
+
 
 
 

@@ -12,6 +12,7 @@ import workflows.Webflows;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @Listeners(utilities.Listeners.class)
 public class SauceDemoWeb extends CommonOps {
 
@@ -100,6 +101,24 @@ public class SauceDemoWeb extends CommonOps {
 
     }
 
+    @Test(description = "Test10 - Verify buttons text")
+    @Description("This test verify the the social buttons Names")
+    public void test10_verifySocialButtonNames() {
+
+        List<WebElement> elements_list = new ArrayList<>();
+        elements_list.add(saucedemoFooter.getFacebookLink());
+        elements_list.add(saucedemoFooter.getTwitterLink());
+        elements_list.add(saucedemoFooter.getLinkedInLink());
+
+        List<String> expectedNames = new ArrayList<>();
+        expectedNames.add("Facebook");
+        expectedNames.add("Twitter");
+        expectedNames.add("LinkedIn");
+
+        Verifications.compareElementText(elements_list,expectedNames);
+
+    }
+
     @AfterMethod
     public void afterMethod() {
         String currentURL = driver.getCurrentUrl();
@@ -109,6 +128,5 @@ public class SauceDemoWeb extends CommonOps {
         goLoginPage();
         Webflows.login(getData("userName"), getData("password"));
     }
-
 
 }

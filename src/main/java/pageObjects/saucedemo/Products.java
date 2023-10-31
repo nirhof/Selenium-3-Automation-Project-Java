@@ -22,8 +22,12 @@ public class Products {
     @FindBy(id = "shopping_cart_container")
     private WebElement btn_Cart;
 
-    @FindBy(css = "button[class='btn btn_primary btn_small btn_inventory']")
+//    @FindBy(css = "button[class='btn btn_primary btn_small btn_inventory']")
+//    private List <WebElement> btn_add_to_cart;
+
+    @FindBy(css = "button[class]")
     private List <WebElement> btn_add_to_cart;
+
 
     // get elements
 

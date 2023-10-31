@@ -5,8 +5,8 @@ import extensions.UIActions;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import utilities.CommonOps;
-
 import java.util.List;
+
 
 public class Webflows extends CommonOps {
 
@@ -88,7 +88,6 @@ public class Webflows extends CommonOps {
         UIActions.updateText(saucedemoCheckout.getZipCodeTextField(), customer.get(2));
         UIActions.click(saucedemoCheckout.getContinueButton());
     }
-
 }
 
 
