@@ -25,6 +25,58 @@ public class Verifications extends CommonOps {
         assertEquals(element.getText(), expectedText);
     }
 
+    @Step("Verify text in element")
+    public static void verifyTextInElementWithAtrribute(WebElement element, String expectedText) {
+        wait.until(ExpectedConditions.and(
+                ExpectedConditions.visibilityOf(element),
+                ExpectedConditions.textToBePresentInElement(element, expectedText)));
+
+        System.out.println("actual text is " + element.getText());
+        System.out.println("expected text is " + expectedText);
+        assertEquals(element.getText(), expectedText);
+    }
+
+    @Step("Verify element is disabled")
+    public static void verifyElementIsDisabled(WebElement element) {
+        wait.until(ExpectedConditions.and(
+                ExpectedConditions.visibilityOf(element),
+                ExpectedConditions.attributeToBe(element,"disabled","true")));
+        assertEquals(element.getAttribute("disabled"), "true");
+    }
+
+    @Step("Verify text contained in element")
+    public static void verifyTextContainedInElement(WebElement element, String expectedText) {
+        wait.until(ExpectedConditions.and(
+                ExpectedConditions.visibilityOf(element),
+                ExpectedConditions.textToBePresentInElement(element, expectedText)));
+
+        System.out.println("actual text is " + element.getText());
+        System.out.println("expected text is " + expectedText);
+        assertTrue(element.getText().contains(expectedText));
+    }
+
+    @Step("Verify elements are empty")
+    public static void verifyElementsAreEmpty(List<WebElement> elements) {
+        for (WebElement element : elements) {
+            wait.until(ExpectedConditions.visibilityOf(element));
+            String elementText = "";
+
+            // Check if the element has a "value" attribute
+            if (element.getAttribute("value") != null) {
+                elementText = element.getAttribute("value");
+            }
+            // If "value" attribute is null, try to get text using getText()
+            else {
+                elementText = element.getText();
+            }
+
+            System.out.println("Element text is: " + elementText);
+            softAssert.assertEquals(elementText, "", "Element is not empty.");
+        }
+
+        softAssert.assertAll("Some elements are not empty");
+    }
+
     @Step("Verify number Of elements")
     public static void numberOfElements(List<WebElement> elements, int expected) {
         wait.until(ExpectedConditions.visibilityOf(elements.get(elements.size() - 1)));
@@ -75,6 +127,14 @@ public class Verifications extends CommonOps {
     @Step("Verify request response status code equals to text")
     public static void verifyStatusCode(int exptected) {
         assertEquals(response.getStatusCode(), exptected);
+    }
+
+
+    @Step("Verify text to text")
+    public static void verifyStringToString(String actualText, String expectedText) {
+        System.out.println("actual text is " + actualText);
+        System.out.println("expected text is " + expectedText);
+        assertEquals(actualText, expectedText);
     }
 
     @Step("Verify list of element equals to list of string text")

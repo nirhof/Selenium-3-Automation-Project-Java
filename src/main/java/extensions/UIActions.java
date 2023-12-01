@@ -2,11 +2,13 @@ package extensions;
 
 import com.google.common.util.concurrent.Uninterruptibles;
 import io.qameta.allure.Step;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import utilities.CommonOps;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
@@ -22,6 +24,39 @@ public class UIActions extends CommonOps {
     public static void updateText(WebElement element, String text) {
         wait.until(ExpectedConditions.visibilityOf(element));
         element.sendKeys(text);
+    }
+
+    @Step("accepting Alert and getting alert text")
+    public static String getAlertText() {
+        wait.until(ExpectedConditions.alertIsPresent());
+        Alert popup = driver.switchTo().alert();
+        String alertText = popup.getText();
+        System.out.println("Alert text is : " + alertText);
+        popup.dismiss();
+
+        return alertText;
+    }
+
+    @Step("Update Text in Elements")
+    public static void updateElementsText(List<WebElement> elements, String[] values) {
+        if (elements.size() != values.length) {
+            System.out.println("Number of elements and values should be the same.");
+            return;
+        }
+
+        for (int i = 0; i < elements.size(); i++) {
+
+            WebElement element = elements.get(i);
+            String value = values[i];
+            wait.until(ExpectedConditions.visibilityOf(element));
+            UIActions.click(element);
+            System.out.println("clicked element " + element);
+            // Clear the existing value in the field
+            element.clear();
+            // Type the new value into the field
+            element.sendKeys(value);
+            System.out.println("updated value " + value);
+        }
     }
 
     @Step("get value of Element")

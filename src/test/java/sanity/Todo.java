@@ -2,6 +2,8 @@ package sanity;
 
 import extensions.Verifications;
 import io.qameta.allure.Description;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
@@ -15,7 +17,7 @@ public class Todo extends CommonOps {
     public void test01_addAndVerifyNewTask() {
         ElectronFlows.addNewTask("Learn Java");
         int Actual = ElectronFlows.getNumberofTasks();
-        Verifications.verifyNumber(Actual,1);
+        Verifications.verifyNumber(Actual, 1);
     }
 
     @Test(description = "Test02 - delete task")
@@ -24,7 +26,7 @@ public class Todo extends CommonOps {
         ElectronFlows.addNewTask("Bake Cake");
         ElectronFlows.deleteTask();
         int Actual = ElectronFlows.getNumberofTasks();
-        Verifications.verifyNumber(Actual,0);
+        Verifications.verifyNumber(Actual, 0);
     }
 
     @Test(description = "Test03 - add tasks")
@@ -34,6 +36,6 @@ public class Todo extends CommonOps {
         ElectronFlows.addNewTask("Learn to bake pizza");
         ElectronFlows.addNewTask("make tea");
         int Actual = ElectronFlows.getNumberofTasks();
-        Verifications.verifyNumber(Actual,3);
+        Verifications.verifyNumber(Actual, 3);
     }
 }
