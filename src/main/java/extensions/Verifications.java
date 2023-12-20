@@ -138,32 +138,33 @@ public class Verifications extends CommonOps {
     }
 
     @Step("Verify list of element equals to list of string text")
-    public static boolean compareElementText(List<WebElement> elements, List<String> expectedStrings) {
-        if (elements.size() != expectedStrings.size()) {
-            System.out.println("The lists sizes are different, they can't be equal");
-            return false; // If the sizes are different, they can't be equal
+    public static void VerifyTextInElements(List<WebElement> elements, List<String> expectedStrings) {
 
+        // Check if the sizes of the lists are different
+        if (elements.size() != expectedStrings.size()) {
+            softAssert.fail("Lists have different sizes");
         }
 
+        // Iterate through the elements and compare their text
         for (int i = 0; i < elements.size(); i++) {
             WebElement element = elements.get(i);
             String actualText = element.getText();
 
-            // If the text is empty, try to get the value attribute
             if (actualText.isEmpty()) {
                 actualText = element.getAttribute("value");
             }
 
             String expectedText = expectedStrings.get(i);
-            System.out.println("element is : " + element);
-            System.out.println("exptected text is : " + actualText);
+            System.out.println("expected text is : " + expectedText);
+            System.out.println("element text is : " + actualText);
 
-            if (!actualText.equals(expectedText)) {
-                return false;
-            }
+            // Compare the actual text with the expected text
+            softAssert.assertEquals(actualText, expectedText, "Text mismatch at index " + i);
+            System.out.println("element text is : " + actualText);
         }
 
-        return true;
+        // Perform assertAll and return the result
+        softAssert.assertAll();
     }
 }
 

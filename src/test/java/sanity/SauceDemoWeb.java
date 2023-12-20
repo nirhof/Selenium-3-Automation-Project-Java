@@ -88,7 +88,7 @@ public class SauceDemoWeb extends CommonOps {
     @Test(description = "Test08 - Verify image of the cart icon")
     @Description("This test verify the cart image icon using sikuli tool")
     public void test8_verifyCartIcon() {
-        Verifications.visualElement("SauceDemoCart");
+                Verifications.visualElement("SauceDemoCart");
     }
 
     @Test(description = "Test09 - Verify product Total price. checkout with customer from DB")
