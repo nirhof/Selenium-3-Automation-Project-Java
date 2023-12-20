@@ -115,7 +115,7 @@ public class SauceDemoWeb extends CommonOps {
         expectedNames.add("Twitter");
         expectedNames.add("LinkedIn");
 
-        Verifications.compareElementText(elements_list,expectedNames);
+        Verifications.VerifyTextInElements(elements_list,expectedNames);
 
     }
 
