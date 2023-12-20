@@ -40,7 +40,7 @@ public class Verifications extends CommonOps {
     public static void verifyElementIsDisabled(WebElement element) {
         wait.until(ExpectedConditions.and(
                 ExpectedConditions.visibilityOf(element),
-                ExpectedConditions.attributeToBe(element,"disabled","true")));
+                ExpectedConditions.attributeToBe(element, "disabled", "true")));
         assertEquals(element.getAttribute("disabled"), "true");
     }
 
@@ -53,6 +53,21 @@ public class Verifications extends CommonOps {
         System.out.println("actual text is " + element.getText());
         System.out.println("expected text is " + expectedText);
         assertTrue(element.getText().contains(expectedText));
+    }
+
+    @Step("Verify list of Strings are contained in element")
+    public static void verifyAllTextsContainedInElement(WebElement element, List<String> expectedTexts) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+
+        String actualText = element.getText();
+        System.out.println("Actual text is: " + actualText);
+        System.out.println("Expected texts are: " + expectedTexts);
+
+        for (String expectedText : expectedTexts) {
+            wait.until(ExpectedConditions.textToBePresentInElement(element, expectedText));
+            assertTrue(actualText.contains(expectedText),
+                    "Expected text '" + expectedText + "' not found in the actual text: '" + actualText + "'");
+        }
     }
 
     @Step("Verify elements are empty")
