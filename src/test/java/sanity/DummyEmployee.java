@@ -11,9 +11,12 @@ import workflows.ApiFlows;
 public class DummyEmployee extends CommonOps {
 
     @Test (description = "Test 01: get employee name from DummyEmployee")
-    @Description("This test verify employee name")
+    @Description("This test verifies the retrieval of employee name from DummyEmployee data")
     public void test01_verify_EmployeeName(){
-        Verifications.verifyText(ApiFlows.getEmployeeDetails("data[0].employee_name"),"Tiger Nixon");
-    }
+        // Get the employee name using the API and the provided employee index (data[0])
+        String actualEmployeeName = ApiFlows.getEmployeeDetails("data[0].employee_name");
+
+        // Verify that the retrieved employee name matches the expected name "Tiger Nixon"
+        Verifications.verifyText(actualEmployeeName, "Tiger Nixon");    }
 
 }
