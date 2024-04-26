@@ -5,7 +5,6 @@ import extensions.Verifications;
 import io.qameta.allure.Description;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
 import workflows.Webflows;
@@ -13,7 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@Listeners(utilities.Listeners.class)
 public class SauceDemoWeb extends CommonOps {
 
 

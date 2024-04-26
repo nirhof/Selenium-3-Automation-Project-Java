@@ -2,12 +2,10 @@ package sanity;
 
 import extensions.Verifications;
 import io.qameta.allure.Description;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
 import workflows.ApiFlows;
 
-@Listeners(utilities.Listeners.class)
 public class DummyEmployee extends CommonOps {
 
     @Test (description = "Test 01: get employee name from DummyEmployee")

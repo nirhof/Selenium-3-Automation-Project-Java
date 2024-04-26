@@ -47,7 +47,7 @@
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
-            <version>2.22.1</version>
+            <version>2.17.2</version>
         </dependency>
 
         <dependency>
@@ -81,6 +81,7 @@
             <artifactId>rest-assured</artifactId>
             <version>3.3.0</version>
         </dependency>
+
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>json-path</artifactId>
@@ -111,6 +112,7 @@
             <artifactId>mysql-connector-j</artifactId>
             <version>8.0.33</version>
         </dependency>
+
 
 
     </dependencies>

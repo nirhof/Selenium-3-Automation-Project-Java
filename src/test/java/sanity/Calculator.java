@@ -3,12 +3,10 @@ package sanity;
 import extensions.Verifications;
 import io.qameta.allure.Description;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
 import workflows.DesktopFlows;
 
-@Listeners(utilities.Listeners.class)
 public class Calculator extends CommonOps {
 
     @Test(description = "Test01 - Verify addition")

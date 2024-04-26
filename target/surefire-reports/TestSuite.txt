@@ -1,8 +1,23 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 99.603 s <<< FAILURE! - in TestSuite
-test09_verifyTotalPriceDB(sanity.SauceDemoWeb)  Time elapsed: 2.926 s  <<< FAILURE!
+Tests run: 20, Failures: 2, Errors: 0, Skipped: 6, Time elapsed: 736.403 s <<< FAILURE! - in TestSuite
+test03_verifyTotalPrice(sanity.SauceDemoWeb)  Time elapsed: 39.809 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: div[Class='summary_info_label summary_total_label']' (tried for 10 second(s) with 500 milliseconds interval)
+	at sanity.SauceDemoWeb.test03_verifyTotalPrice(SauceDemoWeb.java:43)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"div[Class='summary_info_label summary_total_label']"}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-DHGB96Q', ip: '192.168.1.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60753}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\Yosi\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2ceaad15d8c9ce13b35850cd6f6a202
+*** Element info: {Using=css selector, value=div[Class='summary_info_label summary_total_label']}
+	at sanity.SauceDemoWeb.test03_verifyTotalPrice(SauceDemoWeb.java:43)
+
+test09_verifyTotalPriceDB(sanity.SauceDemoWeb)  Time elapsed: 13.23 s  <<< FAILURE!
 java.lang.NullPointerException
-	at sanity.SauceDemoWeb.test09_verifyTotalPriceDB(SauceDemoWeb.java:98)
+	at sanity.SauceDemoWeb.test09_verifyTotalPriceDB(SauceDemoWeb.java:109)
 

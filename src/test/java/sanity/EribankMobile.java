@@ -3,13 +3,11 @@ package sanity;
 import extensions.MobileActions;
 import extensions.Verifications;
 import io.qameta.allure.Description;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
 import workflows.MobileFlows;
 
 
-@Listeners(utilities.Listeners.class)
 public class EribankMobile extends CommonOps {
 
     @Test(description = "Test01 - Verify payment process in Eribank App")

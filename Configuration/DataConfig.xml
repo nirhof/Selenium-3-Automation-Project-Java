@@ -4,7 +4,7 @@
     <Timeout>10</Timeout>
 
     <!-- General -->
-<!--    <PlatformName>web</PlatformName>-->
+    <!--    <PlatformName>web</PlatformName>-->
 
     <!-- Web -->
     <BrowserName>edge</BrowserName>

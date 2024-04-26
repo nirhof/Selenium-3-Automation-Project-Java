@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import utilities.CommonOps;
 import workflows.ElectronFlows;
 
-@Listeners(utilities.Listeners.class)
 public class Todo extends CommonOps {
 
     @Test(description = "Test01 - add and verify task")

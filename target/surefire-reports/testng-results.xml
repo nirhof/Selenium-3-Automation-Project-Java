@@ -1,138 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="12" passed="11">
+<testng-results retried="6" ignored="0" total="20" passed="12" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Web Suite" duration-ms="96709" started-at="2023-10-05T13:32:20 IDT" finished-at="2023-10-05T13:33:57 IDT">
+  <suite started-at="2024-04-26T19:53:35 IDT" name="Web Suite" finished-at="2024-04-26T20:05:44 IDT" duration-ms="728430">
     <groups>
     </groups>
-    <test name="Web Tests" duration-ms="96709" started-at="2023-10-05T13:32:20 IDT" finished-at="2023-10-05T13:33:57 IDT">
-      <class name="sanity.SauceDemoWebTestLogin">
-        <test-method status="PASS" signature="startSession(java.lang.String)[pri:0, instance:sanity.SauceDemoWebTestLogin@3359c978]" name="startSession" is-config="true" duration-ms="11712" started-at="2023-10-05T13:33:38 IDT" finished-at="2023-10-05T13:33:49 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[web]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startSession -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWebTestLogin@3359c978]" name="beforeMethod" is-config="true" duration-ms="13" started-at="2023-10-05T13:33:49 IDT" finished-at="2023-10-05T13:33:49 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sanity.SauceDemoWebTestLogin.test9_verifyLogInErrors(java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test9_verifyLogInErrors(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:sanity.SauceDemoWebTestLogin@3359c978]" name="test9_verifyLogInErrors" duration-ms="1262" started-at="2023-10-05T13:33:49 IDT" description="Test09 - Verify login Errors messages" data-provider="data-provider" finished-at="2023-10-05T13:33:51 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[locked_out_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Epic sadface: Sorry, this user has been locked out.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test9_verifyLogInErrors -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWebTestLogin@3359c978]" name="afterMethod" is-config="true" duration-ms="0" started-at="2023-10-05T13:33:51 IDT" finished-at="2023-10-05T13:33:51 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWebTestLogin@3359c978]" name="beforeMethod" is-config="true" duration-ms="11" started-at="2023-10-05T13:33:51 IDT" finished-at="2023-10-05T13:33:51 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sanity.SauceDemoWebTestLogin.test9_verifyLogInErrors(java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test9_verifyLogInErrors(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:sanity.SauceDemoWebTestLogin@3359c978]" name="test9_verifyLogInErrors" duration-ms="1029" started-at="2023-10-05T13:33:51 IDT" description="Test09 - Verify login Errors messages" data-provider="data-provider" finished-at="2023-10-05T13:33:52 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nir_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test9_verifyLogInErrors -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWebTestLogin@3359c978]" name="afterMethod" is-config="true" duration-ms="0" started-at="2023-10-05T13:33:52 IDT" finished-at="2023-10-05T13:33:52 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWebTestLogin@3359c978]" name="beforeMethod" is-config="true" duration-ms="17" started-at="2023-10-05T13:33:52 IDT" finished-at="2023-10-05T13:33:52 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void sanity.SauceDemoWebTestLogin.test9_verifyLogInErrors(java.lang.String,java.lang.String,java.lang.String)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test9_verifyLogInErrors(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:sanity.SauceDemoWebTestLogin@3359c978]" name="test9_verifyLogInErrors" duration-ms="925" started-at="2023-10-05T13:33:52 IDT" description="Test09 - Verify login Errors messages" data-provider="data-provider" finished-at="2023-10-05T13:33:53 IDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[yoni_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test9_verifyLogInErrors -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWebTestLogin@3359c978]" name="afterMethod" is-config="true" duration-ms="0" started-at="2023-10-05T13:33:53 IDT" finished-at="2023-10-05T13:33:53 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="closeSession()[pri:0, instance:sanity.SauceDemoWebTestLogin@3359c978]" name="closeSession" is-config="true" duration-ms="3842" started-at="2023-10-05T13:33:53 IDT" finished-at="2023-10-05T13:33:57 IDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeSession -->
-      </class> <!-- sanity.SauceDemoWebTestLogin -->
+    <test started-at="2024-04-26T19:53:35 IDT" name="Web Tests" finished-at="2024-04-26T20:05:44 IDT" duration-ms="728430">
       <class name="sanity.SauceDemoWeb">
-        <test-method status="PASS" signature="startSession(java.lang.String)[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="startSession" is-config="true" duration-ms="22744" started-at="2023-10-05T13:32:20 IDT" finished-at="2023-10-05T13:32:43 IDT">
+        <test-method is-config="true" signature="startSession(java.lang.String)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:53:35 IDT" name="startSession" finished-at="2024-04-26T19:55:00 IDT" duration-ms="84853" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -143,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startSession -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="beforeMethod" is-config="true" duration-ms="159" started-at="2023-10-05T13:32:43 IDT" finished-at="2023-10-05T13:32:43 IDT">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:55:00 IDT" name="beforeMethod" finished-at="2024-04-26T19:55:01 IDT" duration-ms="445" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -154,15 +29,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test01_verifyNumberOfProducts()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="test01_verifyNumberOfProducts" duration-ms="303" started-at="2023-10-05T13:32:43 IDT" description="Test01 - Verify number of products" finished-at="2023-10-05T13:32:44 IDT">
+        <test-method signature="test01_verifyNumberOfProducts()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:55:01 IDT" name="test01_verifyNumberOfProducts" description="Test01 - Verify number of products" finished-at="2024-04-26T19:55:09 IDT" duration-ms="7161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test01_verifyNumberOfProducts -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="afterMethod" is-config="true" duration-ms="1505" started-at="2023-10-05T13:32:44 IDT" finished-at="2023-10-05T13:32:45 IDT">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:55:12 IDT" name="afterMethod" finished-at="2024-04-26T19:55:14 IDT" duration-ms="2568" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="beforeMethod" is-config="true" duration-ms="19" started-at="2023-10-05T13:32:45 IDT" finished-at="2023-10-05T13:32:45 IDT">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:55:14 IDT" name="beforeMethod" finished-at="2024-04-26T19:55:14 IDT" duration-ms="81" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -173,15 +48,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test02_verifyPriceOfMostExpensiveItem()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="test02_verifyPriceOfMostExpensiveItem" duration-ms="446" started-at="2023-10-05T13:32:45 IDT" description="Test02 - Verify highest price" finished-at="2023-10-05T13:32:46 IDT">
+        <test-method signature="test02_verifyPriceOfMostExpensiveItem()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:55:14 IDT" name="test02_verifyPriceOfMostExpensiveItem" description="Test02 - Verify highest price" finished-at="2024-04-26T19:55:15 IDT" duration-ms="615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test02_verifyPriceOfMostExpensiveItem -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="afterMethod" is-config="true" duration-ms="1625" started-at="2023-10-05T13:32:46 IDT" finished-at="2023-10-05T13:32:48 IDT">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:55:15 IDT" name="afterMethod" finished-at="2024-04-26T19:55:16 IDT" duration-ms="1526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="beforeMethod" is-config="true" duration-ms="47" started-at="2023-10-05T13:32:48 IDT" finished-at="2023-10-05T13:32:48 IDT">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:55:17 IDT" name="beforeMethod" finished-at="2024-04-26T19:55:21 IDT" duration-ms="4336" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -192,15 +67,380 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test03_verifyTotalPrice()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="test03_verifyTotalPrice" duration-ms="2791" started-at="2023-10-05T13:32:48 IDT" description="Test03 - Verify product Total price" finished-at="2023-10-05T13:32:50 IDT">
+        <test-method retried="true" signature="test03_verifyTotalPrice()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:55:21 IDT" name="test03_verifyTotalPrice" description="Test03 - Verify product Total price" finished-at="2024-04-26T19:55:59 IDT" duration-ms="37628" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: div[Class='summary_info_label summary_total_label']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: div[Class='summary_info_label summary_total_label']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at extensions.Verifications.verifyTextInElement(Verifications.java:22)
+at sanity.SauceDemoWeb.test03_verifyTotalPrice(SauceDemoWeb.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[Class='summary_info_label summary_total_label']"}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-DHGB96Q', ip: '192.168.1.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60753}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\Yosi\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2ceaad15d8c9ce13b35850cd6f6a202
+*** Element info: {Using=css selector, value=div[Class='summary_info_label summary_total_label']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test03_verifyTotalPrice -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="afterMethod" is-config="true" duration-ms="1475" started-at="2023-10-05T13:32:51 IDT" finished-at="2023-10-05T13:32:52 IDT">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:55:59 IDT" name="afterMethod" finished-at="2024-04-26T19:56:01 IDT" duration-ms="2317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="beforeMethod" is-config="true" duration-ms="19" started-at="2023-10-05T13:32:52 IDT" finished-at="2023-10-05T13:32:52 IDT">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:56:01 IDT" name="beforeMethod" finished-at="2024-04-26T19:56:01 IDT" duration-ms="145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SauceDemoWeb.test03_verifyTotalPrice()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method retried="true" signature="test03_verifyTotalPrice()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:56:01 IDT" name="test03_verifyTotalPrice" description="Test03 - Verify product Total price" finished-at="2024-04-26T19:56:34 IDT" duration-ms="32941" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: div[Class='summary_info_label summary_total_label']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: div[Class='summary_info_label summary_total_label']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at extensions.Verifications.verifyTextInElement(Verifications.java:22)
+at sanity.SauceDemoWeb.test03_verifyTotalPrice(SauceDemoWeb.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[Class='summary_info_label summary_total_label']"}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-DHGB96Q', ip: '192.168.1.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60753}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\Yosi\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2ceaad15d8c9ce13b35850cd6f6a202
+*** Element info: {Using=css selector, value=div[Class='summary_info_label summary_total_label']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03_verifyTotalPrice -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:56:34 IDT" name="afterMethod" finished-at="2024-04-26T19:56:38 IDT" duration-ms="3191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:56:38 IDT" name="beforeMethod" finished-at="2024-04-26T19:56:38 IDT" duration-ms="98" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SauceDemoWeb.test03_verifyTotalPrice()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method retried="true" signature="test03_verifyTotalPrice()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:56:38 IDT" name="test03_verifyTotalPrice" description="Test03 - Verify product Total price" finished-at="2024-04-26T19:57:12 IDT" duration-ms="34416" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: div[Class='summary_info_label summary_total_label']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: div[Class='summary_info_label summary_total_label']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at extensions.Verifications.verifyTextInElement(Verifications.java:22)
+at sanity.SauceDemoWeb.test03_verifyTotalPrice(SauceDemoWeb.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[Class='summary_info_label summary_total_label']"}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-DHGB96Q', ip: '192.168.1.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60753}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\Yosi\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2ceaad15d8c9ce13b35850cd6f6a202
+*** Element info: {Using=css selector, value=div[Class='summary_info_label summary_total_label']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03_verifyTotalPrice -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:57:12 IDT" name="afterMethod" finished-at="2024-04-26T19:57:16 IDT" duration-ms="3875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:57:16 IDT" name="beforeMethod" finished-at="2024-04-26T19:57:16 IDT" duration-ms="189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SauceDemoWeb.test03_verifyTotalPrice()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test03_verifyTotalPrice()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:57:16 IDT" name="test03_verifyTotalPrice" description="Test03 - Verify product Total price" finished-at="2024-04-26T19:57:53 IDT" duration-ms="37179" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: div[Class='summary_info_label summary_total_label']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: div[Class='summary_info_label summary_total_label']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at extensions.Verifications.verifyTextInElement(Verifications.java:22)
+at sanity.SauceDemoWeb.test03_verifyTotalPrice(SauceDemoWeb.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[Class='summary_info_label summary_total_label']"}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-DHGB96Q', ip: '192.168.1.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60753}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\Yosi\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2ceaad15d8c9ce13b35850cd6f6a202
+*** Element info: {Using=css selector, value=div[Class='summary_info_label summary_total_label']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03_verifyTotalPrice -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:57:56 IDT" name="afterMethod" finished-at="2024-04-26T19:58:00 IDT" duration-ms="4521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:58:01 IDT" name="beforeMethod" finished-at="2024-04-26T19:58:01 IDT" duration-ms="142" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -211,15 +451,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test04_verifyAddedProductsNumber()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="test04_verifyAddedProductsNumber" duration-ms="1256" started-at="2023-10-05T13:32:52 IDT" description="Test04 - Verify products added to cart" finished-at="2023-10-05T13:32:53 IDT">
+        <test-method signature="test04_verifyAddedProductsNumber()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:58:01 IDT" name="test04_verifyAddedProductsNumber" description="Test04 - Verify products added to cart" finished-at="2024-04-26T19:58:03 IDT" duration-ms="2782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test04_verifyAddedProductsNumber -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="afterMethod" is-config="true" duration-ms="1343" started-at="2023-10-05T13:32:53 IDT" finished-at="2023-10-05T13:32:55 IDT">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:58:04 IDT" name="afterMethod" finished-at="2024-04-26T19:58:08 IDT" duration-ms="4067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="beforeMethod" is-config="true" duration-ms="11" started-at="2023-10-05T13:32:55 IDT" finished-at="2023-10-05T13:32:55 IDT">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:58:08 IDT" name="beforeMethod" finished-at="2024-04-26T19:58:08 IDT" duration-ms="66" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -230,15 +470,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test05_verifySocialButtonAreVisible()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="test05_verifySocialButtonAreVisible" duration-ms="684" started-at="2023-10-05T13:32:55 IDT" description="Test05 - Verify buttons are visible" finished-at="2023-10-05T13:32:55 IDT">
+        <test-method signature="test05_verifySocialButtonAreVisible()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:58:08 IDT" name="test05_verifySocialButtonAreVisible" description="Test05 - Verify buttons are visible" finished-at="2024-04-26T19:58:10 IDT" duration-ms="1955" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test05_verifySocialButtonAreVisible -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="afterMethod" is-config="true" duration-ms="1412" started-at="2023-10-05T13:32:56 IDT" finished-at="2023-10-05T13:32:57 IDT">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:58:10 IDT" name="afterMethod" finished-at="2024-04-26T19:58:14 IDT" duration-ms="4123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="beforeMethod" is-config="true" duration-ms="29" started-at="2023-10-05T13:32:57 IDT" finished-at="2023-10-05T13:32:57 IDT">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:58:14 IDT" name="beforeMethod" finished-at="2024-04-26T19:58:14 IDT" duration-ms="49" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -249,15 +489,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test06_verifyRemovalAllProducts()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="test06_verifyRemovalAllProducts" duration-ms="21221" started-at="2023-10-05T13:32:57 IDT" description="Test06 - Verify removal of all products" finished-at="2023-10-05T13:33:18 IDT">
+        <test-method signature="test06_verifyRemovalAllProducts()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:58:14 IDT" name="test06_verifyRemovalAllProducts" description="Test06 - Verify removal of all products" finished-at="2024-04-26T19:58:40 IDT" duration-ms="25678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test06_verifyRemovalAllProducts -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="afterMethod" is-config="true" duration-ms="4449" started-at="2023-10-05T13:33:18 IDT" finished-at="2023-10-05T13:33:23 IDT">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:58:40 IDT" name="afterMethod" finished-at="2024-04-26T19:59:04 IDT" duration-ms="24098" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="beforeMethod" is-config="true" duration-ms="34" started-at="2023-10-05T13:33:23 IDT" finished-at="2023-10-05T13:33:23 IDT">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:59:04 IDT" name="beforeMethod" finished-at="2024-04-26T19:59:04 IDT" duration-ms="190" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -268,15 +508,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test07_verifyAddedProductsNumber()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="test07_verifyAddedProductsNumber" duration-ms="864" started-at="2023-10-05T13:33:23 IDT" description="Test07 - Verify number of products added to cart" finished-at="2023-10-05T13:33:24 IDT">
+        <test-method signature="test07_verifyAddedProductsNumber()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:59:04 IDT" name="test07_verifyAddedProductsNumber" description="Test07 - Verify number of products added to cart" finished-at="2024-04-26T19:59:14 IDT" duration-ms="9736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test07_verifyAddedProductsNumber -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="afterMethod" is-config="true" duration-ms="1213" started-at="2023-10-05T13:33:24 IDT" finished-at="2023-10-05T13:33:25 IDT">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:59:14 IDT" name="afterMethod" finished-at="2024-04-26T19:59:21 IDT" duration-ms="6957" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="beforeMethod" is-config="true" duration-ms="21" started-at="2023-10-05T13:33:25 IDT" finished-at="2023-10-05T13:33:25 IDT">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:59:23 IDT" name="beforeMethod" finished-at="2024-04-26T19:59:24 IDT" duration-ms="878" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -287,17 +527,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="test09_verifyTotalPriceDB()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="test09_verifyTotalPriceDB" duration-ms="474" started-at="2023-10-05T13:33:25 IDT" description="Test09 - Verify product Total price. checkout with customer from DB" finished-at="2023-10-05T13:33:25 IDT">
+        <test-method retried="true" signature="test09_verifyTotalPriceDB()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:59:24 IDT" name="test09_verifyTotalPriceDB" description="Test09 - Verify product Total price. checkout with customer from DB" finished-at="2024-04-26T19:59:26 IDT" duration-ms="2279" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at extensions.DBActions.getCustomers(DBActions.java:15)
-at workflows.Webflows.CheckoutWithCustomerFromDB(Webflows.java:81)
-at sanity.SauceDemoWeb.test09_verifyTotalPriceDB(SauceDemoWeb.java:98)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at workflows.Webflows.CheckoutWithCustomerFromDB(Webflows.java:82)
+at sanity.SauceDemoWeb.test09_verifyTotalPriceDB(SauceDemoWeb.java:109)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -306,7 +546,7 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
@@ -332,11 +572,210 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test09_verifyTotalPriceDB -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="afterMethod" is-config="true" duration-ms="1234" started-at="2023-10-05T13:33:28 IDT" finished-at="2023-10-05T13:33:29 IDT">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:59:26 IDT" name="afterMethod" finished-at="2024-04-26T19:59:35 IDT" duration-ms="9012" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="beforeMethod" is-config="true" duration-ms="27" started-at="2023-10-05T13:33:29 IDT" finished-at="2023-10-05T13:33:29 IDT">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:59:35 IDT" name="beforeMethod" finished-at="2024-04-26T19:59:36 IDT" duration-ms="306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SauceDemoWeb.test09_verifyTotalPriceDB()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method retried="true" signature="test09_verifyTotalPriceDB()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:59:36 IDT" name="test09_verifyTotalPriceDB" description="Test09 - Verify product Total price. checkout with customer from DB" finished-at="2024-04-26T19:59:40 IDT" duration-ms="4552" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at extensions.DBActions.getCustomers(DBActions.java:15)
+at workflows.Webflows.CheckoutWithCustomerFromDB(Webflows.java:82)
+at sanity.SauceDemoWeb.test09_verifyTotalPriceDB(SauceDemoWeb.java:109)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test09_verifyTotalPriceDB -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:59:40 IDT" name="afterMethod" finished-at="2024-04-26T19:59:56 IDT" duration-ms="15904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:59:56 IDT" name="beforeMethod" finished-at="2024-04-26T19:59:56 IDT" duration-ms="324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SauceDemoWeb.test09_verifyTotalPriceDB()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method retried="true" signature="test09_verifyTotalPriceDB()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T19:59:57 IDT" name="test09_verifyTotalPriceDB" description="Test09 - Verify product Total price. checkout with customer from DB" finished-at="2024-04-26T20:00:05 IDT" duration-ms="8842" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at extensions.DBActions.getCustomers(DBActions.java:15)
+at workflows.Webflows.CheckoutWithCustomerFromDB(Webflows.java:82)
+at sanity.SauceDemoWeb.test09_verifyTotalPriceDB(SauceDemoWeb.java:109)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test09_verifyTotalPriceDB -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T20:00:05 IDT" name="afterMethod" finished-at="2024-04-26T20:00:34 IDT" duration-ms="28875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T20:00:34 IDT" name="beforeMethod" finished-at="2024-04-26T20:00:35 IDT" duration-ms="679" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SauceDemoWeb.test09_verifyTotalPriceDB()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test09_verifyTotalPriceDB()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T20:00:35 IDT" name="test09_verifyTotalPriceDB" description="Test09 - Verify product Total price. checkout with customer from DB" finished-at="2024-04-26T20:00:44 IDT" duration-ms="9516" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at extensions.DBActions.getCustomers(DBActions.java:15)
+at workflows.Webflows.CheckoutWithCustomerFromDB(Webflows.java:82)
+at sanity.SauceDemoWeb.test09_verifyTotalPriceDB(SauceDemoWeb.java:109)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test09_verifyTotalPriceDB -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T20:00:48 IDT" name="afterMethod" finished-at="2024-04-26T20:01:10 IDT" duration-ms="21202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T20:01:10 IDT" name="beforeMethod" finished-at="2024-04-26T20:01:10 IDT" duration-ms="720" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SauceDemoWeb.test10_verifySocialButtonNames()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test10_verifySocialButtonNames()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T20:01:10 IDT" name="test10_verifySocialButtonNames" description="Test10 - Verify buttons text" finished-at="2024-04-26T20:01:15 IDT" duration-ms="4318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10_verifySocialButtonNames -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T20:01:15 IDT" name="afterMethod" finished-at="2024-04-26T20:01:32 IDT" duration-ms="16963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T20:01:32 IDT" name="beforeMethod" finished-at="2024-04-26T20:01:32 IDT" duration-ms="385" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -347,19 +786,180 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test8_verifyCartIcon()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="test8_verifyCartIcon" duration-ms="2446" started-at="2023-10-05T13:33:29 IDT" description="Test08 - Verify image of the cart icon" finished-at="2023-10-05T13:33:32 IDT">
+        <test-method signature="test8_verifyCartIcon()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T20:01:32 IDT" name="test8_verifyCartIcon" description="Test08 - Verify image of the cart icon" finished-at="2024-04-26T20:01:52 IDT" duration-ms="19618" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test8_verifyCartIcon -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="afterMethod" is-config="true" duration-ms="2135" started-at="2023-10-05T13:33:32 IDT" finished-at="2023-10-05T13:33:34 IDT">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T20:01:52 IDT" name="afterMethod" finished-at="2024-04-26T20:02:12 IDT" duration-ms="19212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="closeSession()[pri:0, instance:sanity.SauceDemoWeb@37ff4054]" name="closeSession" is-config="true" duration-ms="3784" started-at="2023-10-05T13:33:34 IDT" finished-at="2023-10-05T13:33:38 IDT">
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:sanity.SauceDemoWeb@117bcfdc]" started-at="2024-04-26T20:02:12 IDT" name="closeSession" finished-at="2024-04-26T20:03:22 IDT" duration-ms="70790" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSession -->
       </class> <!-- sanity.SauceDemoWeb -->
+      <class name="sanity.SauceDemoWebTestLogin">
+        <test-method is-config="true" signature="startSession(java.lang.String)[pri:0, instance:sanity.SauceDemoWebTestLogin@3d49fd31]" started-at="2024-04-26T20:03:22 IDT" name="startSession" finished-at="2024-04-26T20:03:58 IDT" duration-ms="35919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSession -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWebTestLogin@3d49fd31]" started-at="2024-04-26T20:04:02 IDT" name="beforeMethod" finished-at="2024-04-26T20:04:02 IDT" duration-ms="484" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SauceDemoWebTestLogin.test9_verifyLogInErrors(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test9_verifyLogInErrors(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:sanity.SauceDemoWebTestLogin@3d49fd31]" started-at="2024-04-26T20:04:02 IDT" name="test9_verifyLogInErrors" description="Test09 - Verify login Errors messages" data-provider="data-provider" finished-at="2024-04-26T20:04:30 IDT" duration-ms="27775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Sorry, this user has been locked out.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9_verifyLogInErrors -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWebTestLogin@3d49fd31]" started-at="2024-04-26T20:04:32 IDT" name="afterMethod" finished-at="2024-04-26T20:04:32 IDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWebTestLogin@3d49fd31]" started-at="2024-04-26T20:04:32 IDT" name="beforeMethod" finished-at="2024-04-26T20:04:33 IDT" duration-ms="768" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SauceDemoWebTestLogin.test9_verifyLogInErrors(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test9_verifyLogInErrors(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:sanity.SauceDemoWebTestLogin@3d49fd31]" started-at="2024-04-26T20:04:33 IDT" name="test9_verifyLogInErrors" description="Test09 - Verify login Errors messages" data-provider="data-provider" finished-at="2024-04-26T20:04:39 IDT" duration-ms="5935" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nir_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9_verifyLogInErrors -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWebTestLogin@3d49fd31]" started-at="2024-04-26T20:04:39 IDT" name="afterMethod" finished-at="2024-04-26T20:04:39 IDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWebTestLogin@3d49fd31]" started-at="2024-04-26T20:04:39 IDT" name="beforeMethod" finished-at="2024-04-26T20:04:40 IDT" duration-ms="680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SauceDemoWebTestLogin.test9_verifyLogInErrors(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test9_verifyLogInErrors(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:sanity.SauceDemoWebTestLogin@3d49fd31]" started-at="2024-04-26T20:04:42 IDT" name="test9_verifyLogInErrors" description="Test09 - Verify login Errors messages" data-provider="data-provider" finished-at="2024-04-26T20:04:47 IDT" duration-ms="5241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yoni_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9_verifyLogInErrors -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWebTestLogin@3d49fd31]" started-at="2024-04-26T20:04:47 IDT" name="afterMethod" finished-at="2024-04-26T20:04:47 IDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SauceDemoWebTestLogin@3d49fd31]" started-at="2024-04-26T20:04:47 IDT" name="beforeMethod" finished-at="2024-04-26T20:04:47 IDT" duration-ms="252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SauceDemoWebTestLogin.test9_verifyLogInErrors(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test9_verifyLogInErrors(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:sanity.SauceDemoWebTestLogin@3d49fd31]" started-at="2024-04-26T20:04:47 IDT" name="test9_verifyLogInErrors" description="Test09 - Verify login Errors messages" data-provider="data-provider" finished-at="2024-04-26T20:04:54 IDT" duration-ms="6949" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[saed_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9_verifyLogInErrors -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sanity.SauceDemoWebTestLogin@3d49fd31]" started-at="2024-04-26T20:04:55 IDT" name="afterMethod" finished-at="2024-04-26T20:04:55 IDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:sanity.SauceDemoWebTestLogin@3d49fd31]" started-at="2024-04-26T20:04:55 IDT" name="closeSession" finished-at="2024-04-26T20:05:44 IDT" duration-ms="49253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- sanity.SauceDemoWebTestLogin -->
     </test> <!-- Web Tests -->
   </suite> <!-- Web Suite -->
 </testng-results>

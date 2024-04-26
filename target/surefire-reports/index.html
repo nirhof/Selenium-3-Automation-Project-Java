@@ -24,22 +24,22 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Web_Suite">
+            <a href="#" panel-name="suite-Web_Suite" class="navigator-link">
               <span class="suite-name border-failed">Web Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Web_Suite">
+                  <a href="#" panel-name="test-xml-Web_Suite" class="navigator-link ">
                     <span>C:\Automation\Projects\FinalProject\TestNGWeb.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Web_Suite">
+                  <a href="#" panel-name="testlist-Web_Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Web_Suite">
+                  <a href="#" panel-name="group-Web_Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Web_Suite">
+                  <a href="#" panel-name="times-Web_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Web_Suite">
+                  <a href="#" panel-name="reporter-Web_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Web_Suite">
+                  <a href="#" panel-name="ignored-methods-Web_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Web_Suite">
+                  <a href="#" panel-name="chronological-Web_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
+                    <span class="method-stats">20 methods, 2 failed,  6 skipped,  12 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,11 +103,55 @@
                     </span>
                     <div class="method-list-content failed suite-Web_Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" hash-for-method="test09_verifyTotalPriceDB">test09_verifyTotalPriceDB</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" class="method navigator-link" hash-for-method="test03_verifyTotalPrice">test03_verifyTotalPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" class="method navigator-link" hash-for-method="test09_verifyTotalPriceDB">test09_verifyTotalPriceDB</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Web_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Web_Suite" class="hide-methods skipped suite-Web_Suite"> (hide)</a> <!-- hide-methods skipped suite-Web_Suite -->
+                      <a href="#" panel-name="suite-Web_Suite" class="show-methods skipped suite-Web_Suite"> (show)</a> <!-- show-methods skipped suite-Web_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Web_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" class="method navigator-link" hash-for-method="test03_verifyTotalPrice">test03_verifyTotalPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" class="method navigator-link" hash-for-method="test03_verifyTotalPrice">test03_verifyTotalPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" class="method navigator-link" hash-for-method="test03_verifyTotalPrice">test03_verifyTotalPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" class="method navigator-link" hash-for-method="test09_verifyTotalPriceDB">test09_verifyTotalPriceDB</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" class="method navigator-link" hash-for-method="test09_verifyTotalPriceDB">test09_verifyTotalPriceDB</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" class="method navigator-link" hash-for-method="test09_verifyTotalPriceDB">test09_verifyTotalPriceDB</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Web_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,58 +161,63 @@
                     </span>
                     <div class="method-list-content passed suite-Web_Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" hash-for-method="test01_verifyNumberOfProducts">test01_verifyNumberOfProducts</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" class="method navigator-link" hash-for-method="test01_verifyNumberOfProducts">test01_verifyNumberOfProducts</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" hash-for-method="test02_verifyPriceOfMostExpensiveItem">test02_verifyPriceOfMostExpensiveItem</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" class="method navigator-link" hash-for-method="test02_verifyPriceOfMostExpensiveItem">test02_verifyPriceOfMostExpensiveItem</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" hash-for-method="test03_verifyTotalPrice">test03_verifyTotalPrice</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" class="method navigator-link" hash-for-method="test04_verifyAddedProductsNumber">test04_verifyAddedProductsNumber</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" hash-for-method="test04_verifyAddedProductsNumber">test04_verifyAddedProductsNumber</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" class="method navigator-link" hash-for-method="test05_verifySocialButtonAreVisible">test05_verifySocialButtonAreVisible</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" hash-for-method="test05_verifySocialButtonAreVisible">test05_verifySocialButtonAreVisible</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" class="method navigator-link" hash-for-method="test06_verifyRemovalAllProducts">test06_verifyRemovalAllProducts</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" hash-for-method="test06_verifyRemovalAllProducts">test06_verifyRemovalAllProducts</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" class="method navigator-link" hash-for-method="test07_verifyAddedProductsNumber">test07_verifyAddedProductsNumber</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" hash-for-method="test07_verifyAddedProductsNumber">test07_verifyAddedProductsNumber</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" class="method navigator-link" hash-for-method="test10_verifySocialButtonNames">test10_verifySocialButtonNames</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" hash-for-method="test8_verifyCartIcon">test8_verifyCartIcon</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWeb" class="method navigator-link" hash-for-method="test8_verifyCartIcon">test8_verifyCartIcon</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Web_Suite" title="sanity.SauceDemoWebTestLogin" hash-for-method="test9_verifyLogInErrors(nir_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)">test9_verifyLogInErrors(nir_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWebTestLogin" class="method navigator-link" hash-for-method="test9_verifyLogInErrors(locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out.)">test9_verifyLogInErrors(locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out.)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Web_Suite" title="sanity.SauceDemoWebTestLogin" hash-for-method="test9_verifyLogInErrors(locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out.)">test9_verifyLogInErrors(locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out.)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWebTestLogin" class="method navigator-link" hash-for-method="test9_verifyLogInErrors(saed_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)">test9_verifyLogInErrors(saed_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Web_Suite" title="sanity.SauceDemoWebTestLogin" hash-for-method="test9_verifyLogInErrors(yoni_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)">test9_verifyLogInErrors(yoni_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWebTestLogin" class="method navigator-link" hash-for-method="test9_verifyLogInErrors(yoni_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)">test9_verifyLogInErrors(yoni_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Web_Suite" title="sanity.SauceDemoWebTestLogin" class="method navigator-link" hash-for-method="test9_verifyLogInErrors(nir_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)">test9_verifyLogInErrors(nir_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Web_Suite -->
@@ -191,14 +240,59 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="test03_verifyTotalPrice">
+                  </a> <!-- test03_verifyTotalPrice -->
+                  <span class="method-name">test03_verifyTotalPrice</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: div[Class=&apos;summary_info_label summary_total_label&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at extensions.Verifications.verifyTextInElement(Verifications.java:22)
+	at sanity.SauceDemoWeb.test03_verifyTotalPrice(SauceDemoWeb.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[Class=&apos;summary_info_label summary_total_label&apos;]&quot;}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-DHGB96Q&apos;, ip: &apos;192.168.1.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.19&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60753}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\Yosi\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2ceaad15d8c9ce13b35850cd6f6a202
+*** Element info: {Using=css selector, value=div[Class=&apos;summary_info_label summary_total_label&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test03 - Verify product Total price)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="test09_verifyTotalPriceDB">
                   </a> <!-- test09_verifyTotalPriceDB -->
                   <span class="method-name">test09_verifyTotalPriceDB</span>
                   <div class="stack-trace">java.lang.NullPointerException
 	at extensions.DBActions.getCustomers(DBActions.java:15)
-	at workflows.Webflows.CheckoutWithCustomerFromDB(Webflows.java:81)
-	at sanity.SauceDemoWeb.test09_verifyTotalPriceDB(SauceDemoWeb.java:98)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at workflows.Webflows.CheckoutWithCustomerFromDB(Webflows.java:82)
+	at sanity.SauceDemoWeb.test09_verifyTotalPriceDB(SauceDemoWeb.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -207,6 +301,197 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Web_Suite-class-failed -->
+          <div class="suite-Web_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">sanity.SauceDemoWeb</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test03_verifyTotalPrice">
+                  </a> <!-- test03_verifyTotalPrice -->
+                  <span class="method-name">test03_verifyTotalPrice</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: div[Class=&apos;summary_info_label summary_total_label&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at extensions.Verifications.verifyTextInElement(Verifications.java:22)
+	at sanity.SauceDemoWeb.test03_verifyTotalPrice(SauceDemoWeb.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[Class=&apos;summary_info_label summary_total_label&apos;]&quot;}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-DHGB96Q&apos;, ip: &apos;192.168.1.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.19&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60753}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\Yosi\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2ceaad15d8c9ce13b35850cd6f6a202
+*** Element info: {Using=css selector, value=div[Class=&apos;summary_info_label summary_total_label&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test03 - Verify product Total price)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test03_verifyTotalPrice">
+                  </a> <!-- test03_verifyTotalPrice -->
+                  <span class="method-name">test03_verifyTotalPrice</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: div[Class=&apos;summary_info_label summary_total_label&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at extensions.Verifications.verifyTextInElement(Verifications.java:22)
+	at sanity.SauceDemoWeb.test03_verifyTotalPrice(SauceDemoWeb.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[Class=&apos;summary_info_label summary_total_label&apos;]&quot;}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-DHGB96Q&apos;, ip: &apos;192.168.1.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.19&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60753}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\Yosi\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2ceaad15d8c9ce13b35850cd6f6a202
+*** Element info: {Using=css selector, value=div[Class=&apos;summary_info_label summary_total_label&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test03 - Verify product Total price)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test03_verifyTotalPrice">
+                  </a> <!-- test03_verifyTotalPrice -->
+                  <span class="method-name">test03_verifyTotalPrice</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.cssSelector: div[Class=&apos;summary_info_label summary_total_label&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at extensions.Verifications.verifyTextInElement(Verifications.java:22)
+	at sanity.SauceDemoWeb.test03_verifyTotalPrice(SauceDemoWeb.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[Class=&apos;summary_info_label summary_total_label&apos;]&quot;}
+  (Session info: MicrosoftEdge=124.0.2478.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-DHGB96Q&apos;, ip: &apos;192.168.1.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.19&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 124.0.2478.51, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60753}, msedge: {msedgedriverVersion: 124.0.2478.51 (e23a9b7d0a14..., userDataDir: C:\Users\Yosi\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2ceaad15d8c9ce13b35850cd6f6a202
+*** Element info: {Using=css selector, value=div[Class=&apos;summary_info_label summary_total_label&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 34 more
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test03 - Verify product Total price)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test09_verifyTotalPriceDB">
+                  </a> <!-- test09_verifyTotalPriceDB -->
+                  <span class="method-name">test09_verifyTotalPriceDB</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at extensions.DBActions.getCustomers(DBActions.java:15)
+	at workflows.Webflows.CheckoutWithCustomerFromDB(Webflows.java:82)
+	at sanity.SauceDemoWeb.test09_verifyTotalPriceDB(SauceDemoWeb.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test09 - Verify product Total price. checkout with customer from DB)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test09_verifyTotalPriceDB">
+                  </a> <!-- test09_verifyTotalPriceDB -->
+                  <span class="method-name">test09_verifyTotalPriceDB</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at extensions.DBActions.getCustomers(DBActions.java:15)
+	at workflows.Webflows.CheckoutWithCustomerFromDB(Webflows.java:82)
+	at sanity.SauceDemoWeb.test09_verifyTotalPriceDB(SauceDemoWeb.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test09 - Verify product Total price. checkout with customer from DB)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test09_verifyTotalPriceDB">
+                  </a> <!-- test09_verifyTotalPriceDB -->
+                  <span class="method-name">test09_verifyTotalPriceDB</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at extensions.DBActions.getCustomers(DBActions.java:15)
+	at workflows.Webflows.CheckoutWithCustomerFromDB(Webflows.java:82)
+	at sanity.SauceDemoWeb.test09_verifyTotalPriceDB(SauceDemoWeb.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test09 - Verify product Total price. checkout with customer from DB)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Web_Suite-class-skipped -->
           <div class="suite-Web_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -229,15 +514,6 @@
                   <span class="method-name">test02_verifyPriceOfMostExpensiveItem</span>
                   <em>
 (Test02 - Verify highest price)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test03_verifyTotalPrice">
-                  </a> <!-- test03_verifyTotalPrice -->
-                  <span class="method-name">test03_verifyTotalPrice</span>
-                  <em>
-(Test03 - Verify product Total price)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -278,6 +554,15 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="test10_verifySocialButtonNames">
+                  </a> <!-- test10_verifySocialButtonNames -->
+                  <span class="method-name">test10_verifySocialButtonNames</span>
+                  <em>
+(Test10 - Verify buttons text)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="test8_verifyCartIcon">
                   </a> <!-- test8_verifyCartIcon -->
                   <span class="method-name">test8_verifyCartIcon</span>
@@ -295,16 +580,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test9_verifyLogInErrors(nir_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)">
-                  </a> <!-- test9_verifyLogInErrors(nir_user, secret_sauce, Epic sadface: Username and password do not match any user in this service) -->
-                  <span class="method-name">test9_verifyLogInErrors</span>
-                  <span class="parameters">(nir_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)</span>
-                  <em>
-(Test09 - Verify login Errors messages)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="test9_verifyLogInErrors(locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out.)">
                   </a> <!-- test9_verifyLogInErrors(locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out.) -->
                   <span class="method-name">test9_verifyLogInErrors</span>
@@ -315,10 +590,30 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="test9_verifyLogInErrors(saed_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)">
+                  </a> <!-- test9_verifyLogInErrors(saed_user, secret_sauce, Epic sadface: Username and password do not match any user in this service) -->
+                  <span class="method-name">test9_verifyLogInErrors</span>
+                  <span class="parameters">(saed_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)</span>
+                  <em>
+(Test09 - Verify login Errors messages)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="test9_verifyLogInErrors(yoni_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)">
                   </a> <!-- test9_verifyLogInErrors(yoni_user, secret_sauce, Epic sadface: Username and password do not match any user in this service) -->
                   <span class="method-name">test9_verifyLogInErrors</span>
                   <span class="parameters">(yoni_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)</span>
+                  <em>
+(Test09 - Verify login Errors messages)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test9_verifyLogInErrors(nir_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)">
+                  </a> <!-- test9_verifyLogInErrors(nir_user, secret_sauce, Epic sadface: Username and password do not match any user in this service) -->
+                  <span class="method-name">test9_verifyLogInErrors</span>
+                  <span class="parameters">(nir_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)</span>
                   <em>
 (Test09 - Verify login Errors messages)                  </em>
                 </div> <!-- method-content -->
@@ -334,8 +629,12 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Web Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Web Tests&quot;&gt;
+&lt;suite name=&quot;Web Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilities.Listeners&quot;/&gt;
+    &lt;listener class-name=&quot;utilities.AnnotationTransformer&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Web Tests&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;PlatformName&quot; value=&quot;web&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;sanity.SauceDemoWeb&quot;/&gt;
@@ -379,60 +678,92 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(20);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test06_verifyRemovalAllProducts')
+data.setCell(0, 1, 'test03_verifyTotalPrice')
 data.setCell(0, 2, 'sanity.SauceDemoWeb')
-data.setCell(0, 3, 21221);
+data.setCell(0, 3, 37628);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test03_verifyTotalPrice')
 data.setCell(1, 2, 'sanity.SauceDemoWeb')
-data.setCell(1, 3, 2791);
+data.setCell(1, 3, 37179);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test8_verifyCartIcon')
+data.setCell(2, 1, 'test03_verifyTotalPrice')
 data.setCell(2, 2, 'sanity.SauceDemoWeb')
-data.setCell(2, 3, 2446);
+data.setCell(2, 3, 34416);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test9_verifyLogInErrors')
-data.setCell(3, 2, 'sanity.SauceDemoWebTestLogin')
-data.setCell(3, 3, 1262);
+data.setCell(3, 1, 'test03_verifyTotalPrice')
+data.setCell(3, 2, 'sanity.SauceDemoWeb')
+data.setCell(3, 3, 32941);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'test04_verifyAddedProductsNumber')
-data.setCell(4, 2, 'sanity.SauceDemoWeb')
-data.setCell(4, 3, 1256);
+data.setCell(4, 1, 'test9_verifyLogInErrors')
+data.setCell(4, 2, 'sanity.SauceDemoWebTestLogin')
+data.setCell(4, 3, 27775);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'test9_verifyLogInErrors')
-data.setCell(5, 2, 'sanity.SauceDemoWebTestLogin')
-data.setCell(5, 3, 1029);
+data.setCell(5, 1, 'test06_verifyRemovalAllProducts')
+data.setCell(5, 2, 'sanity.SauceDemoWeb')
+data.setCell(5, 3, 25678);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'test9_verifyLogInErrors')
-data.setCell(6, 2, 'sanity.SauceDemoWebTestLogin')
-data.setCell(6, 3, 925);
+data.setCell(6, 1, 'test8_verifyCartIcon')
+data.setCell(6, 2, 'sanity.SauceDemoWeb')
+data.setCell(6, 3, 19618);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'test07_verifyAddedProductsNumber')
 data.setCell(7, 2, 'sanity.SauceDemoWeb')
-data.setCell(7, 3, 864);
+data.setCell(7, 3, 9736);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'test05_verifySocialButtonAreVisible')
+data.setCell(8, 1, 'test09_verifyTotalPriceDB')
 data.setCell(8, 2, 'sanity.SauceDemoWeb')
-data.setCell(8, 3, 684);
+data.setCell(8, 3, 9516);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'test09_verifyTotalPriceDB')
 data.setCell(9, 2, 'sanity.SauceDemoWeb')
-data.setCell(9, 3, 474);
+data.setCell(9, 3, 8842);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'test02_verifyPriceOfMostExpensiveItem')
+data.setCell(10, 1, 'test01_verifyNumberOfProducts')
 data.setCell(10, 2, 'sanity.SauceDemoWeb')
-data.setCell(10, 3, 446);
+data.setCell(10, 3, 7161);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'test01_verifyNumberOfProducts')
-data.setCell(11, 2, 'sanity.SauceDemoWeb')
-data.setCell(11, 3, 303);
+data.setCell(11, 1, 'test9_verifyLogInErrors')
+data.setCell(11, 2, 'sanity.SauceDemoWebTestLogin')
+data.setCell(11, 3, 6949);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'test9_verifyLogInErrors')
+data.setCell(12, 2, 'sanity.SauceDemoWebTestLogin')
+data.setCell(12, 3, 5935);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'test9_verifyLogInErrors')
+data.setCell(13, 2, 'sanity.SauceDemoWebTestLogin')
+data.setCell(13, 3, 5241);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'test09_verifyTotalPriceDB')
+data.setCell(14, 2, 'sanity.SauceDemoWeb')
+data.setCell(14, 3, 4552);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'test10_verifySocialButtonNames')
+data.setCell(15, 2, 'sanity.SauceDemoWeb')
+data.setCell(15, 3, 4318);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'test04_verifyAddedProductsNumber')
+data.setCell(16, 2, 'sanity.SauceDemoWeb')
+data.setCell(16, 3, 2782);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'test09_verifyTotalPriceDB')
+data.setCell(17, 2, 'sanity.SauceDemoWeb')
+data.setCell(17, 3, 2279);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'test05_verifySocialButtonAreVisible')
+data.setCell(18, 2, 'sanity.SauceDemoWeb')
+data.setCell(18, 3, 1955);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'test02_verifyPriceOfMostExpensiveItem')
+data.setCell(19, 2, 'sanity.SauceDemoWeb')
+data.setCell(19, 3, 615);
 window.suiteTableData['Web_Suite']= { tableData: data, tableDiv: 'times-div-Web_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Web_Suite">
               </div> <!-- times-div-Web_Suite -->
             </div> <!-- times-div -->
@@ -465,164 +796,262 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void sanity.SauceDemoWeb.test01_verifyNumberOfProducts())</span>
-                <span class="method-start">22772 ms</span>
+                <span class="method-start">84897 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test01_verifyNumberOfProducts</span>
-                <span class="method-start">23378 ms</span>
+                <span class="method-start">86010 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">23771 ms</span>
+                <span class="method-start">96075 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void sanity.SauceDemoWeb.test02_verifyPriceOfMostExpensiveItem())</span>
-                <span class="method-start">25283 ms</span>
+                <span class="method-start">98654 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test02_verifyPriceOfMostExpensiveItem</span>
-                <span class="method-start">25311 ms</span>
+                <span class="method-start">98742 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">25874 ms</span>
+                <span class="method-start">99494 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void sanity.SauceDemoWeb.test03_verifyTotalPrice())</span>
-                <span class="method-start">27507 ms</span>
+                <span class="method-start">101415 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test03_verifyTotalPrice</span>
-                <span class="method-start">27558 ms</span>
+                <span class="method-start">105806 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">30472 ms</span>
+                <span class="method-start">143441 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void sanity.SauceDemoWeb.test03_verifyTotalPrice())</span>
+                <span class="method-start">145761 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test03_verifyTotalPrice</span>
+                <span class="method-start">145916 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">178864 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void sanity.SauceDemoWeb.test03_verifyTotalPrice())</span>
+                <span class="method-start">182059 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test03_verifyTotalPrice</span>
+                <span class="method-start">182167 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">216589 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void sanity.SauceDemoWeb.test03_verifyTotalPrice())</span>
+                <span class="method-start">220467 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test03_verifyTotalPrice</span>
+                <span class="method-start">220660 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">260505 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void sanity.SauceDemoWeb.test04_verifyAddedProductsNumber())</span>
-                <span class="method-start">31950 ms</span>
+                <span class="method-start">265030 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test04_verifyAddedProductsNumber</span>
-                <span class="method-start">31972 ms</span>
+                <span class="method-start">265176 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">33319 ms</span>
+                <span class="method-start">268071 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void sanity.SauceDemoWeb.test05_verifySocialButtonAreVisible())</span>
-                <span class="method-start">34665 ms</span>
+                <span class="method-start">272142 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test05_verifySocialButtonAreVisible</span>
-                <span class="method-start">34690 ms</span>
+                <span class="method-start">272213 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">35477 ms</span>
+                <span class="method-start">274369 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void sanity.SauceDemoWeb.test06_verifyRemovalAllProducts())</span>
-                <span class="method-start">36891 ms</span>
+                <span class="method-start">278507 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test06_verifyRemovalAllProducts</span>
-                <span class="method-start">36922 ms</span>
+                <span class="method-start">278559 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">58238 ms</span>
+                <span class="method-start">304543 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void sanity.SauceDemoWeb.test07_verifyAddedProductsNumber())</span>
-                <span class="method-start">62690 ms</span>
+                <span class="method-start">328687 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test07_verifyAddedProductsNumber</span>
-                <span class="method-start">62725 ms</span>
+                <span class="method-start">328917 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">63656 ms</span>
+                <span class="method-start">338807 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void sanity.SauceDemoWeb.test09_verifyTotalPriceDB())</span>
-                <span class="method-start">64872 ms</span>
+                <span class="method-start">347619 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test09_verifyTotalPriceDB</span>
+                <span class="method-start">348501 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">350866 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void sanity.SauceDemoWeb.test09_verifyTotalPriceDB())</span>
+                <span class="method-start">359885 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test09_verifyTotalPriceDB</span>
+                <span class="method-start">360203 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">364759 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void sanity.SauceDemoWeb.test09_verifyTotalPriceDB())</span>
+                <span class="method-start">380675 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test09_verifyTotalPriceDB</span>
+                <span class="method-start">381039 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">389883 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void sanity.SauceDemoWeb.test09_verifyTotalPriceDB())</span>
+                <span class="method-start">418765 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">test09_verifyTotalPriceDB</span>
-                <span class="method-start">64896 ms</span>
+                <span class="method-start">419492 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">67825 ms</span>
+                <span class="method-start">432842 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void sanity.SauceDemoWeb.test10_verifySocialButtonNames())</span>
+                <span class="method-start">454047 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test10_verifySocialButtonNames</span>
+                <span class="method-start">454862 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">459430 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void sanity.SauceDemoWeb.test8_verifyCartIcon())</span>
-                <span class="method-start">69066 ms</span>
+                <span class="method-start">476399 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test8_verifyCartIcon</span>
-                <span class="method-start">69095 ms</span>
+                <span class="method-start">476849 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">71613 ms</span>
+                <span class="method-start">496893 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeSession</span>
-                <span class="method-start">73751 ms</span>
+                <span class="method-start">516111 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">sanity.SauceDemoWebTestLogin</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startSession(web)</span>
-                <span class="method-start">77536 ms</span>
+                <span class="method-start">586904 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void sanity.SauceDemoWebTestLogin.test9_verifyLogInErrors(java.lang.String,java.lang.String,j...)</span>
-                <span class="method-start">89279 ms</span>
+                <span class="method-start">626306 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test9_verifyLogInErrors(locked_out_user, secret_sauce, Epic sadface: Sorry, this user has been locked out.)</span>
-                <span class="method-start">89294 ms</span>
+                <span class="method-start">626820 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">90630 ms</span>
+                <span class="method-start">656266 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void sanity.SauceDemoWebTestLogin.test9_verifyLogInErrors(java.lang.String,java.lang.String,j...)</span>
-                <span class="method-start">90632 ms</span>
+                <span class="method-start">656433 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test9_verifyLogInErrors(nir_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)</span>
-                <span class="method-start">90645 ms</span>
+                <span class="method-start">657235 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">91783 ms</span>
+                <span class="method-start">663396 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void sanity.SauceDemoWebTestLogin.test9_verifyLogInErrors(java.lang.String,java.lang.String,j...)</span>
-                <span class="method-start">91785 ms</span>
+                <span class="method-start">663427 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test9_verifyLogInErrors(yoni_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)</span>
-                <span class="method-start">91804 ms</span>
+                <span class="method-start">666099 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">92790 ms</span>
+                <span class="method-start">671628 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void sanity.SauceDemoWebTestLogin.test9_verifyLogInErrors(java.lang.String,java.lang.String,j...)</span>
+                <span class="method-start">671633 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test9_verifyLogInErrors(saed_user, secret_sauce, Epic sadface: Username and password do not match any user in this service)</span>
+                <span class="method-start">671893 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">679065 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeSession</span>
-                <span class="method-start">92792 ms</span>
+                <span class="method-start">679113 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

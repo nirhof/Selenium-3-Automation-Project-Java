@@ -3,6 +3,7 @@ C:\Automation\Projects\FinalProject\src\main\java\pageObjects\Eribank\MainPage.j
 C:\Automation\Projects\FinalProject\src\main\java\utilities\MonteScreenRecorder.java
 C:\Automation\Projects\FinalProject\src\main\java\pageObjects\saucedemo\Products.java
 C:\Automation\Projects\FinalProject\src\main\java\workflows\ElectronFlows.java
+C:\Automation\Projects\FinalProject\src\main\java\utilities\AnnotationTransformer.java
 C:\Automation\Projects\FinalProject\src\main\java\workflows\Webflows.java
 C:\Automation\Projects\FinalProject\src\main\java\utilities\ManagePages.java
 C:\Automation\Projects\FinalProject\src\main\java\pageObjects\Eribank\LoginPage.java
@@ -10,6 +11,7 @@ C:\Automation\Projects\FinalProject\src\main\java\pageObjects\saucedemo\Overview
 C:\Automation\Projects\FinalProject\src\main\java\pageObjects\todo\MainPage.java
 C:\Automation\Projects\FinalProject\src\main\java\pageObjects\Calculator\MainPage.java
 C:\Automation\Projects\FinalProject\src\main\java\pageObjects\saucedemo\footerSocial.java
+C:\Automation\Projects\FinalProject\src\main\java\utilities\RetryAnalyzer.java
 C:\Automation\Projects\FinalProject\src\main\java\utilities\Base.java
 C:\Automation\Projects\FinalProject\src\main\java\extensions\DBActions.java
 C:\Automation\Projects\FinalProject\src\main\java\utilities\Listeners.java

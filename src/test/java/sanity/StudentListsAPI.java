@@ -2,14 +2,12 @@ package sanity;
 
 import extensions.Verifications;
 import io.qameta.allure.Description;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.CommonOps;
 import workflows.ApiFlows;
 import java.util.Arrays;
 import java.util.List;
 
-@Listeners(utilities.Listeners.class)
 public class StudentListsAPI extends CommonOps {
 
     // java -jar students.jar --server.port=9000
