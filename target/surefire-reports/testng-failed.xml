@@ -10,12 +10,18 @@
     <classes>
       <class name="sanity.SauceDemoWeb">
         <methods>
+          <include name="test04_verifyAddedProductsNumber"/>
+          <include name="test07_verifyAddedProductsNumber"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
+          <include name="test06_verifyRemovalAllProducts"/>
           <include name="closeSession"/>
           <include name="test03_verifyTotalPrice"/>
+          <include name="test10_verifySocialButtonNames"/>
           <include name="startSession"/>
+          <include name="test05_verifySocialButtonAreVisible"/>
           <include name="test09_verifyTotalPriceDB"/>
+          <include name="test8_verifyCartIcon"/>
         </methods>
       </class> <!-- sanity.SauceDemoWeb -->
     </classes>

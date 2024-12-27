@@ -14,7 +14,7 @@
     <UDID>R58W703T0NY</UDID>
     <AppPackage>com.experitest.ExperiBank</AppPackage>
     <AppActivity>.LoginActivity</AppActivity>
-    <AppiumServer>http://localhost:4723/wd/hub</AppiumServer>
+    <AppiumServer>http://localhost:4730/wd/hub</AppiumServer>
 
     <!-- API -->
 
